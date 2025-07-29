@@ -23,43 +23,57 @@
 <body>
   <!-- Header -->
   <header>
-    <h1>Carolina Queiroz</h1>
-    <nav>
-      <a href="#sobre">Sobre</a>
-      <a href="#servicos">Serviços</a>
-      <a href="#agendamento">Agendar</a>
-      <a href="#instagram">Instagram</a>
-      <a href="#contato">Contato</a>
+    <nav aria-label="Menu principal">
+      <section class="logo" aria-label="Logo do site">
+        <a href="#hero">Carolina Queiroz</a>
+      </section>
+
+      <section>
+        <ul class="menu menu-esquerda">
+          <li><a href="#hero">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+        </ul>
+      </section>
+
+      <section>
+        <ul class="menu menu-direita">
+          <li><a href="#agendamento">Agendamento</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </section>
     </nav>
   </header>
 
   <main>
     <!-- Hero / Capa -->
     <section class="hero" id="hero" aria-label="Seção principal - Hero">
-      <div class="hero-content">
+      <article class="hero-content">
         <div class="hero-phrases" aria-live="polite" aria-atomic="true">
           <p class="phrase active">Realce sua beleza natural com cuidado exclusivo.</p>
           <p class="phrase">Atendimento personalizado no conforto da sua casa.</p>
           <p class="phrase">Sua autoestima merece o melhor tratamento.</p>
         </div>
-      </div>
+      </article>
 
-      <div class="hero-gallery">
-        <div class="hero-card" tabindex="0" role="button" aria-label="Conheça os serviços">
+      <section class="hero-gallery" aria-label="Galeria de fotos do Hero">
+        <article class="hero-card" tabindex="0" role="button" aria-label="Conheça os serviços">
           <img src="../img/capa2.jpg" alt="Estética" loading="lazy" />
           <a href="#servicos" class="card-button">Conheça os serviços</a>
-        </div>
+        </article>
 
-        <div class="hero-card" tabindex="0" role="button" aria-label="Agendar no WhatsApp">
+        <article class="hero-card" tabindex="0" role="button" aria-label="Agendar no WhatsApp">
           <img src="../img/capa1.jpg" alt="Relaxante" loading="lazy" />
-          <a href="https://wa.me/5599999999999" class="card-button" target="_blank" rel="noopener noreferrer">Agendar no WhatsApp</a>
-        </div>
+          <a href="https://wa.me/5599999999999" class="card-button" target="_blank" rel="noopener noreferrer">Agendar no
+            WhatsApp</a>
+        </article>
 
-        <div class="hero-card" tabindex="0" role="button" aria-label="Sobre Carolina Queiroz">
+        <article class="hero-card" tabindex="0" role="button" aria-label="Sobre Carolina Queiroz">
           <img src="../img/carolina.jpg" alt="Carolina Queiroz" loading="lazy" />
           <a href="#sobre" class="card-button">Sobre mim</a>
-        </div>
-      </div>
+        </article>
+      </section>
     </section>
 
     <!-- Transição -->
@@ -90,40 +104,45 @@
     </section>
 
     <!-- Serviços -->
-    <section id="servicos" aria-label="Seção de serviços">
+    <section id="servicos" aria-label="Seção de serviços oferecidos">
       <h2>Meus Serviços</h2>
-      <div class="servicos-container">
-
-        <div class="servico" tabindex="0" role="button" aria-pressed="false" aria-label="Serviço Limpeza de Pele">
+      <section class="servicos-container">
+        <article class="servico" tabindex="0" role="button" aria-pressed="false" aria-label="Serviço Limpeza de Pele">
           <img src="../img/limpeza-pele.jpg" alt="Limpeza de Pele" loading="lazy" />
           <h3>Limpeza de Pele</h3>
-          <p class="resumo">Remove impurezas, células mortas e controla a oleosidade, deixando a pele mais saudável e revitalizada.</p>
-        </div>
+          <p class="resumo">Remove impurezas, células mortas e controla a oleosidade, deixando a pele mais saudável e
+            revitalizada.</p>
+        </article>
 
-        <div class="servico" tabindex="0" role="button" aria-pressed="false" aria-label="Serviço Massagem Relaxante">
+        <article class="servico" tabindex="0" role="button" aria-pressed="false"
+          aria-label="Serviço Massagem Relaxante">
           <img src="../img/mass-relaxante.jpg" alt="Massagem Relaxante" loading="lazy" />
           <h3>Massagem Relaxante</h3>
           <p class="resumo">Técnica que alivia o estresse e as tensões musculares com movimentos suaves e contínuos.</p>
-        </div>
+        </article>
 
-        <div class="servico" tabindex="0" role="button" aria-pressed="false" aria-label="Serviço Massagem Terapêutica">
+        <article class="servico" tabindex="0" role="button" aria-pressed="false"
+          aria-label="Serviço Massagem Terapêutica">
           <img src="../img/mass-terapeutica.jpg" alt="Massagem Terapêutica" loading="lazy" />
           <h3>Massagem Terapêutica</h3>
-          <p class="resumo">Atua no alívio de dores crônicas e tensões profundas, combinando técnicas manuais com foco terapêutico.</p>
-        </div>
+          <p class="resumo">Atua no alívio de dores crônicas e tensões profundas, combinando técnicas manuais com foco
+            terapêutico.</p>
+        </article>
 
-        <div class="servico" tabindex="0" role="button" aria-pressed="false" aria-label="Serviço Depilação a Laser">
+        <article class="servico" tabindex="0" role="button" aria-pressed="false" aria-label="Serviço Depilação a Laser">
           <img src="../img/dep-laser.jpg" alt="Depilação a Laser" loading="lazy" />
           <h3>Depilação a Laser</h3>
-          <p class="resumo">Tecnologia eficaz para redução permanente dos pelos, proporcionando mais conforto e praticidade.</p>
-        </div>
+          <p class="resumo">Tecnologia eficaz para redução permanente dos pelos, proporcionando mais conforto e
+            praticidade.</p>
+        </article>
 
-        <div class="servico" tabindex="0" role="button" aria-pressed="false" aria-label="Serviço Depilação a Cera">
+        <article class="servico" tabindex="0" role="button" aria-pressed="false" aria-label="Serviço Depilação a Cera">
           <img src="../img/dep-cera.jpg" alt="Depilação a Cera" loading="lazy" />
           <h3>Depilação a Cera</h3>
-          <p class="resumo">Método tradicional que remove os pelos desde a raiz, deixando a pele lisa e macia por mais tempo.</p>
-        </div>
-      </div>
+          <p class="resumo">Método tradicional que remove os pelos desde a raiz, deixando a pele lisa e macia por mais
+            tempo.</p>
+        </article>
+      </section>
     </section>
 
     <!-- Agendamento -->
@@ -134,7 +153,8 @@
         <input type="text" id="nome" name="nome" required aria-required="true" aria-label="Digite seu nome" />
 
         <label for="procedimento">Procedimento</label>
-        <select id="procedimento" name="procedimento" required aria-required="true" aria-label="Selecione o procedimento">
+        <select id="procedimento" name="procedimento" required aria-required="true"
+          aria-label="Selecione o procedimento">
           <option value="">Selecione</option>
           <option value="Limpeza de Pele">Limpeza de Pele</option>
           <option value="Massagem Relaxante">Massagem Relaxante</option>
@@ -144,11 +164,13 @@
         </select>
 
         <label for="mensagem">Mensagem</label>
-        <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva uma mensagem..." aria-label="Mensagem opcional"></textarea>
+        <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva uma mensagem..."
+          aria-label="Mensagem opcional"></textarea>
 
         <div class="form-buttons">
           <button type="submit" class="whatsapp-button" aria-label="Enviar agendamento via WhatsApp">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#fff" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#fff" viewBox="0 0 24 24"
+              aria-hidden="true" focusable="false">
               <path
                 d="M20.52 3.48A11.87 11.87 0 0 0 12 0a11.88 11.88 0 0 0-10.3 17.8L0 24l6.4-1.67A11.91 11.91 0 0 0 12 24a11.88 11.88 0 0 0 8.52-20.52zM12 21.92a9.89 9.89 0 0 1-5.1-1.4l-.37-.22-3.8 1 .9-3.7-.24-.38A9.89 9.89 0 1 1 12 21.92zm5.34-7.59c-.3-.15-1.77-.87-2.05-.97s-.47-.15-.67.15-.77.96-.95 1.16-.35.22-.64.07a8.15 8.15 0 0 1-2.4-1.48 9 9 0 0 1-1.66-2.06c-.17-.29 0-.44.13-.6s.29-.35.44-.52a2.1 2.1 0 0 0 .3-.51.55.55 0 0 0 0-.52c-.07-.15-.67-1.62-.91-2.23s-.48-.52-.67-.52-.37 0-.56 0a1.08 1.08 0 0 0-.78.37 3.3 3.3 0 0 0-1 2.45 5.79 5.79 0 0 0 1.21 3.13 13.49 13.49 0 0 0 5.34 4.53 6.6 6.6 0 0 0 3.1.82 2.79 2.79 0 0 0 1.82-.79 2.3 2.3 0 0 0 .5-1.65c-.07-.15-.27-.22-.57-.37z" />
             </svg>
@@ -177,7 +199,8 @@
         <img src="../img/feed4.jpg" alt="Produtos utilizados" loading="lazy" />
       </div>
 
-      <a href="https://www.instagram.com/carolina_mqueiroz/" target="_blank" rel="noopener noreferrer" class="btn-instagram" aria-label="Ver mais no Instagram">
+      <a href="https://www.instagram.com/carolina_mqueiroz/" target="_blank" rel="noopener noreferrer"
+        class="btn-instagram" aria-label="Ver mais no Instagram">
         <i class="fab fa-instagram" aria-hidden="true"></i> Ver mais no Instagram
       </a>
     </section>
@@ -185,7 +208,8 @@
     <!-- Contato -->
     <section class="contato" id="contato" aria-label="Seção de contato">
       <h2>Contato</h2>
-      <p>WhatsApp: <a href="https://wa.me/5599999999999" target="_blank" rel="noopener noreferrer" aria-label="Número WhatsApp">(99) 99999-9999</a>
+      <p>WhatsApp: <a href="https://wa.me/5599999999999" target="_blank" rel="noopener noreferrer"
+          aria-label="Número WhatsApp">(99) 99999-9999</a>
       </p>
       <p>Email: <a href="mailto:contato@email.com" aria-label="Enviar email">contato@email.com</a></p>
       <p>Local: Belo Horizonte - MG</p>
@@ -194,44 +218,44 @@
 
   <!-- Footer -->
   <footer>
-<footer class="site-footer">
-  <div class="footer-container">
-    <div class="footer-col">
-      <img src="../img/logo.jpg" alt="Logo Estética" class="footer-logo">
-      <p class="footer-slogan">Realçando sua beleza, com carinho e dedicação.</p>
-    </div>
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-col">
+          <img src="../img/logo.jpg" alt="Logo Estética" class="footer-logo">
+          <p class="footer-slogan">Realçando sua beleza, com carinho e dedicação.</p>
+        </div>
 
-    <div class="footer-col">
-      <h4>Links</h4>
-      <ul>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#servicos">Serviços</a></li>
-        <li><a href="#agendamento">Agendamento</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </div>
+        <div class="footer-col">
+          <h4>Links</h4>
+          <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#agendamento">Agendamento</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
 
-    <div class="footer-col">
-      <h4>Contato</h4>
-      <p>📞 (31) 99999-9999</p>
-      <p>📍 Belo Horizonte - MG</p>
-      <p>📧 atendimento@esteticacarol.com</p>
-    </div>
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <p>📞 (31) 99999-9999</p>
+          <p>📍 Belo Horizonte - MG</p>
+          <p>📧 atendimento@esteticacarol.com</p>
+        </div>
 
-    <div class="footer-col">
-      <h4>Redes Sociais</h4>
-      <div class="social-icons">
-        <a href="https://www.instagram.com" target="_blank"><img src="img/instagram.svg" alt="Instagram" /></a>
-        <a href="https://wa.me/5531999999999" target="_blank"><img src="img/whatsapp.svg" alt="WhatsApp" /></a>
+        <div class="footer-col">
+          <h4>Redes Sociais</h4>
+          <div class="social-icons">
+            <a href="https://www.instagram.com" target="_blank"><img src="img/instagram.svg" alt="Instagram" /></a>
+            <a href="https://wa.me/5531999999999" target="_blank"><img src="img/whatsapp.svg" alt="WhatsApp" /></a>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
 
-  <div class="footer-bottom">
-    <p>&copy; 2025 Estética Carol. Todos os direitos reservados.</p>
-    <p>Desenvolvido por <strong>Michael Dev</strong> 💻</p>
-  </div>
-</footer>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Estética Carol. Todos os direitos reservados.</p>
+        <p>Desenvolvido por <strong>Michael Dev</strong> 💻</p>
+      </div>
+    </footer>
 
   </footer>
 </body>
