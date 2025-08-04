@@ -20,9 +20,14 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color: var(--cor-bege-claro);
+  background-image: url(../img/fundo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
   color: var(--cor-marrom-suave);
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 img {
@@ -46,53 +51,83 @@ button {
 /*           HEADER            */
 /* ============================ */
 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans:wght@400;600&display=swap');
+
 header {
-  background-color: #fff8f0;
-  padding: 20px 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: var(--cor-bege-claro);
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 1000;
 }
 
-nav {
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
-  justify-content: center;
-  gap: 30px;
+  align-items: center;
+  justify-content: space-between;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 
-nav a {
+.logo a {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: var(--cor-marrom-suave);
+  text-decoration: none;
+  background-color: #f7eadb;
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  border: 2px solid var(--cor-marrom-medio);
+  box-shadow: 0 4px 8px rgba(139, 94, 60, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(139, 94, 60, 0.3);
+}
+
+.menu-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  padding: 0.6rem 1rem;
+  background-color: #fff8f0;
+  border-radius: 16px;
+  border: 2px solid var(--cor-marrom-suave);
+  box-shadow: 0 4px 8px rgba(74, 63, 63, 0.15);
+}
+
+.menu a {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  color: var(--cor-marrom-suave);
+  text-decoration: none;
+  padding: 0.4rem 0.6rem;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.menu a:hover {
   color: var(--cor-marrom-medio);
-  font-weight: bold;
-  position: relative;
+  transform: translateY(-2px);
 }
 
-nav a::after {
-  content: '';
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: var(--cor-marrom-medio);
-  transition: width 0.3s ease;
-}
-
-nav a:hover {
-  color: #5d3d26;
-}
-
-nav a:hover::after {
-  width: 100%;
-}
 
 /* ============================ */
 /*           HERO              */
 /* ============================ */
 
 .hero {
-  background-color: var(--cor-bege-claro);
+  background: linear-gradient(135deg, #f7eadb 0%, var(--cor-bege-claro) 100%);
   padding: 60px 20px;
   text-align: center;
   animation: fadeInUp 1s ease forwards;
@@ -236,7 +271,8 @@ nav a:hover::after {
 
 #sobre {
   padding: 80px 20px;
-  background-color: #ffffff;
+  background-color: var(--cor-bege-claro);
+  text-align: center;
   animation: fadeInUp 1.2s ease forwards;
 }
 
@@ -277,7 +313,6 @@ nav a:hover::after {
 
 #servicos {
   padding: 80px 20px;
-  background-color: #f7eadb;
   text-align: center;
   animation: fadeInUp 1.4s ease forwards;
 }
@@ -296,7 +331,8 @@ nav a:hover::after {
 }
 
 .servico {
-  background-color: #fff;
+  background-color: var(--cor-bege-claro);
+  border: 2px solid var(--cor-marrom-suave);
   padding: 20px;
   border-radius: 15px;
   width: 280px;
@@ -315,7 +351,7 @@ nav a:hover::after {
 
 .servico img {
   width: 100%;
-  height: 200px;
+  height: 180px;
   object-fit: cover;
   border-radius: 12px;
   margin-bottom: 15px;
@@ -377,109 +413,248 @@ nav a:hover::after {
 /*        AGENDAMENTO          */
 /* ============================ */
 
+/* Seção principal */
 .agendamento {
-  background-color: #fff8f5;
-  padding: 80px 20px;
+  padding: 60px 20px;
+}
+
+/* Cabeçalho da seção */
+
+.agendamento-header h1 {
+  font-size: 2.5rem;
+  color: var(--cor-marrom-medio);
   text-align: center;
-  animation: fadeInUp 1.5s ease forwards;
+  margin-bottom: 10px;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 1px;
 }
 
-.agendamento h2 {
-  font-size: 2.2rem;
-  color: #b55a37;
-  margin-bottom: 30px;
-  font-family: 'Georgia', serif;
-}
-
-#form-agendamento {
+.agendamento-header p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  color: #5a4c48;
+  text-align: center;
+  margin: 15px auto 40px;
   max-width: 600px;
-  margin: 0 auto;
-  background-color: #fceeee;
-  padding: 30px;
-  border-radius: 20px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  line-height: 1.6;
 }
 
-#form-agendamento label {
-  display: block;
-  text-align: left;
-  margin-bottom: 8px;
-  font-weight: bold;
-  color: #b55a37;
-}
 
-#form-agendamento input,
-#form-agendamento select,
-#form-agendamento textarea {
-  width: 100%;
-  padding: 12px 14px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  border: 1px solid #ccc;
-  font-size: 1rem;
-  font-family: inherit;
-  background-color: #fff;
-}
-
-#form-agendamento textarea {
-  resize: none;
-}
-
-#form-agendamento button {
-  background-color: var(--cor-verde-whatsapp);
-  color: white;
-  border: none;
-  padding: 14px 28px;
-  border-radius: 30px;
-  font-weight: bold;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background 0.3s ease, transform 0.3s ease;
-  animation: pulse 2.5s infinite ease-in-out;
-}
-
-#form-agendamento button:hover {
-  background-color: var(--cor-verde-whatsapp-hover);
-  transform: scale(1.05);
-}
-
-.agendamento .form-buttons {
+/* Container principal */
+.cont-grid {
   display: flex;
-  gap: 30px;
-  margin-top: 20px;
-  flex-wrap: wrap;
   justify-content: center;
+  align-items: stretch;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 40px 20px;
 }
 
-.agendamento button {
-  padding: 12px 20px;
-  border: none;
-  border-radius: 25px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background 0.3s ease;
+/* Grid de contato */
+.cont-grid {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+}
+
+/* Informações de contato */
+.cont-info {
+  flex: 1.4; /* maior */
+  min-width: 320px;
+  max-width: 600px;
+  border-radius: 16px;
+  padding: 30px;
+}
+
+/* Coluna da direita: formulário */
+.form {
+  background-color: var(--cor-bege-claro);
+  border-radius: 16px;
+  border: 2px solid var(--cor-marrom-suave);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  padding: 30px;
+}
+
+.agendamento-form {
+  flex: 1; /* menor */
+  min-width: 280px;
+  max-width: 450px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  transition: all 0.3s ease;
+  border: 1px solid var(--cor-marrom-suave);
+}
+
+/* Títulos */
+.cont-header h1,
+.agendamento-form h2 {
+  font-size: 2rem;
+  color: var(--cor-marrom-medio);
+  margin-bottom: 15px;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.5px;
+}
+
+/* Parágrafos */
+.cont-header p,
+.agendamento-form p {
+  font-size: 1.1rem;
+  color: #5a4c48;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 30px;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+/* Lista de contatos */
+.cont-list {
+  margin-top: 30px;
+}
+
+.cont-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.cont-icon {
+  font-size: 1.6rem;
+  color: var(--cor-marrom-medio);
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.cont-text h4 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--cor-marrom-suave);
+  font-family: 'Poppins', sans-serif;
+}
+
+.cont-text p {
+  margin: 4px 0 0;
+  font-size: 1rem;
+  color: #5a4c48;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+}
+
+/* Ícones sociais */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+  gap: 25px;
+}
+
+.social-icon {
+  font-size: 2.2rem;
+  color: var(--cor-marrom-medio);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.25);
+  color: var(--cor-marrom-suave);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* Formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+label {
+  font-weight: 600;
+  color: var(--cor-marrom-suave);
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+input,
+select,
+textarea {
+  padding: 14px 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--cor-marrom-medio);
+  box-shadow: 0 0 8px rgba(139, 94, 60, 0.25);
+  outline: none;
+}
+
+/* Botões */
+.form-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 10px;
 }
 
 .whatsapp-button {
-  background-color: var(--cor-verde-whatsapp);
+  background: linear-gradient(to right, #25d366, #1ebe5d);
   color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
   display: flex;
   align-items: center;
-  gap: 10px;
-  animation: pulse 2.5s infinite ease-in-out;
+  gap: 8px;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .whatsapp-button:hover {
-  background-color: var(--cor-verde-whatsapp-hover);
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(37, 211, 102, 0.4);
 }
 
 .clear-button {
-  background-color: var(--cor-cinza-claro);
-  color: #333;
+  background-color: #f4f1ec;
+  color: var(--cor-marrom-suave);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .clear-button:hover {
-  background-color: var(--cor-cinza-medio);
+  background-color: #e8e1d9;
+  color: var(--cor-marrom-medio);
+}
+
+/* Feedback */
+#form-feedback {
+  font-size: 1rem;
+  margin-top: 10px;
+  text-align: center;
+  color: var(--cor-marrom-medio);
 }
 
 /* ============================ */
@@ -542,42 +717,6 @@ nav a:hover::after {
 
 .btn-instagram:hover {
   background-color: #8c3e25;
-}
-
-/* ============================ */
-/*          CONTATO            */
-/* ============================ */
-
-.contato {
-  padding: 80px 20px;
-  background-color: #fff8f5;
-  text-align: center;
-  animation: fadeInUp 1.5s ease forwards;
-}
-
-.contato h2 {
-  font-size: 2rem;
-  color: #b55a37;
-  margin-bottom: 30px;
-  font-family: 'Georgia', serif;
-}
-
-.contato p {
-  font-size: 1.1rem;
-  margin-bottom: 15px;
-  color: #333;
-}
-
-.contato a {
-  color: #b55a37;
-  font-weight: bold;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.contato a:hover {
-  color: #8c3e25;
-  text-decoration: underline;
 }
 
 /* ============================ */
@@ -710,6 +849,7 @@ nav a:hover::after {
 }
 
 @keyframes pulse {
+
   0%,
   100% {
     transform: scale(1);
@@ -726,40 +866,62 @@ nav a:hover::after {
 /*         RESPONSIVO          */
 /* ============================ */
 
+/* RESPONSIVIDADE EXTRA */
 @media (max-width: 768px) {
-  .hero-card {
-    width: 90%;
-    height: 350px;
-  }
-
-  .hero-content h1 {
-    font-size: 2rem;
-  }
-
-  .hero-content p {
-    font-size: 1rem;
-  }
-
-  .hero-buttons {
-    flex-direction: column;
-    gap: 16px;
-    max-width: 100%;
-  }
-
-  .hero-buttons a {
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 14px 0;
-  }
-
-  nav {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .servicos-container {
+@media (max-width: 768px) {
+  .navbar {
     flex-direction: column;
     align-items: center;
+  }
+
+  .menu-wrapper {
+    justify-content: center;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .menu a {
+    padding: 0.8rem;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+  .hero-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-card {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+  }
+
+  .hero-card img {
+    height: auto;
+  }
+
+  .footer-col {
+    text-align: center;
+  }
+
+  .footer-col ul {
+    padding: 0;
+  }
+    .cont-grid {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .cont-info,
+  .agendamento-form {
+    max-width: 100%;
   }
 }
