@@ -4,45 +4,61 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfólio Estética - Carolina Queiroz</title>
+
+  <title>Carolina Queiroz | Esteticista em Belo Horizonte</title>
+
   <meta name="description"
-    content="Portfólio de estética e bem-estar de Carolina Queiroz. Serviços personalizados em Belo Horizonte.">
+    content="Tratamentos faciais, massagens e estética avançada com atendimento personalizado em Belo Horizonte. Realce sua beleza com Carolina Queiroz." />
+  <meta name="keywords"
+    content="esteticista Belo Horizonte, estética facial, limpeza de pele, massagem relaxante, depilação, estética corporal, Carolina Queiroz" />
+  <meta name="author" content="Michael Dutra" />
+  <meta name="robots" content="index, follow" />
 
-  <!-- Meta Open Graph para redes sociais -->
-  <meta property="og:title" content="Portfólio Estética - Carolina Queiroz" />
-  <meta property="og:description" content="Serviços personalizados em estética e bem-estar em Belo Horizonte." />
+  <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://seusite.com.br/" />
-  <meta property="og:image" content="https://seusite.com.br/img/capa1.jpg" />
+  <meta property="og:url" content="https://esteticacarolinaqueiroz.netlify.app/" />
+  <meta property="og:title" content="Carolina Queiroz | Estética e Bem-estar" />
+  <meta property="og:description"
+    content="Beleza e cuidado com atendimento profissional em Belo Horizonte. Conheça os serviços de Carolina Queiroz." />
+  <meta property="og:image" content="https://esteticacarolinaqueiroz.netlify.app/img/capa1.jpg" />
 
-  <link rel="stylesheet" href="../css/home.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/fontawesome.min.css" />
-  <script src="../js/home.js" defer></script>
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Carolina Queiroz | Esteticista em BH" />
+  <meta name="twitter:description"
+    content="Tratamentos personalizados em estética e bem-estar. Conheça os serviços!" />
+  <meta name="twitter:image" content="https://esteticacarolinaqueiroz.netlify.app/img/capa1.jpg" />
+
+  <link rel="canonical" href="https://esteticacarolinaqueiroz.netlify.app/" />
+  <link rel="icon" href="img/logo.webp" type="image/webp" />
+
+  <link rel="stylesheet" href="css/home.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src="js/home.js" defer></script>
 </head>
 
 <body>
-  <!-- Header -->
   <header>
-    <div class="navbar">
+    <nav class="navbar">
       <div class="logo">
         <a href="#">Carolina Queiroz</a>
       </div>
       <div class="menu-wrapper">
         <ul class="menu">
           <li><a href="#">Início</a></li>
-          <li><a href="#about">Sobre</a></li>
-          <li><a href="#services">Serviços</a></li>
-          <li><a href="#contact">Contato</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#agendamento">Contato</a></li>
         </ul>
       </div>
-    </div>
+      <button class="theme-toggle" aria-label="Alternar tema" title="Alternar entre modo claro e escuro">
+        <i class="fas fa-moon"></i>
+      </button>
+    </nav>
   </header>
 
   <main>
-    <!-- Hero / Capa -->
     <section class="hero" id="hero" aria-label="Seção principal - Hero">
       <article class="hero-content">
         <div class="hero-phrases" aria-live="polite" aria-atomic="true">
@@ -52,163 +68,130 @@
         </div>
       </article>
 
-      <section class="hero-gallery" aria-label="Galeria de fotos do Hero">
+      <div class="hero-gallery" aria-label="Galeria de fotos do Hero">
         <article class="hero-card" tabindex="0" role="button" aria-label="Conheça os serviços">
-          <img src="../img/capa2.jpg" alt="Estética" loading="lazy" />
+          <img src="img/capa2.webp" alt="Mulher recebendo tratamento estético facial com máscara de argila." decoding="async" />
           <a href="#servicos" class="card-button">Conheça os serviços</a>
         </article>
 
         <article class="hero-card" tabindex="0" role="button" aria-label="Agendar no WhatsApp">
-          <img src="../img/capa1.jpg" alt="Relaxante" loading="lazy" />
-          <a href="https://wa.me/5599999999999" class="card-button" target="_blank" rel="noopener noreferrer">Agendar no
+          <img src="img/capa1.webp" alt="Ambiente de massagem com maca, toalhas e iluminação suave." loading="lazy" />
+          <a href="https://wa.me/5531997459813" class="card-button" target="_blank" rel="noopener noreferrer">Agendar no
             WhatsApp</a>
         </article>
 
         <article class="hero-card" tabindex="0" role="button" aria-label="Sobre Carolina Queiroz">
-          <img src="../img/carolina.jpg" alt="Carolina Queiroz" loading="lazy" />
+          <img src="img/carolina.webp" alt="Retrato profissional da esteticista Carolina Queiroz." loading="lazy" />
           <a href="#sobre" class="card-button">Sobre mim</a>
         </article>
-      </section>
+      </div>
     </section>
 
-    <!-- Transição -->
     <section class="transicao" id="transicao">
       <h1>Aqui, cada cliente é única — e cada cuidado, especial.</h1>
     </section>
 
-    <!-- Sobre -->
     <section id="sobre" aria-label="Seção sobre Carolina">
       <div class="sobre-container">
-
         <div class="sobre-img">
-          <img src="../img/carolina-sobre.jpg" alt="Carolina Queiroz - Esteticista" loading="lazy" />
+        <img data-src="img/carolina-sobre.webp" alt="Carolina Queiroz - Esteticista" loading="lazy" decoding="async" />
         </div>
-
         <div class="sobre-texto">
           <h2>Sobre Carolina</h2>
+          <h3>Sua saúde e beleza em primeiro lugar.</h3>
           <p>
-            Sou a Carolina Queiroz, especialista em estética e cuidados com a pele. Com um atendimento personalizado e
-            humanizado, levo bem-estar e autoestima até você, no conforto da sua casa.
+            Sou esteticista e atuo com uma abordagem focada no bem-estar e na prevenção. Com experiência em tratamentos
+            faciais e massagens, crio protocolos exclusivos, pensados para as necessidades de cada cliente.
           </p>
-          <p>
-            Unindo técnica, carinho e praticidade, ofereço serviços de alta qualidade voltados para quem busca
-            resultados reais e uma experiência acolhedora.
-          </p>
+          <button id="btn-historia" class="btn-principal">Conheça Minha História</button>
         </div>
       </div>
     </section>
 
-    <!-- Serviços -->
     <section id="servicos" aria-label="Seção de serviços oferecidos">
       <h2>Meus Serviços</h2>
-      <section class="servicos-container">
-        <article class="servico" tabindex="0" role="button" aria-pressed="false" aria-label="Serviço Limpeza de Pele">
-          <img src="../img/limpeza-pele.jpg" alt="Limpeza de Pele" loading="lazy" />
+      <div class="servicos-container">
+        <article class="servico" tabindex="0" aria-label="Serviço Limpeza de Pele">
+          <img data-src="img/limpeza-pele.webp" alt="Rosto de cliente recebendo procedimento de limpeza de pele profissional." loading="lazy" decoding="async" />
           <h3>Limpeza de Pele</h3>
-          <p class="resumo">Remove impurezas, células mortas e controla a oleosidade, deixando a pele mais saudável e
-            revitalizada.</p>
+          <p class="resumo">Remove impurezas, células mortas e controla a oleosidade, deixando a pele saudável e revitalizada.</p>
         </article>
 
-        <article class="servico" tabindex="0" role="button" aria-pressed="false"
-          aria-label="Serviço Massagem Relaxante">
-          <img src="../img/mass-relaxante.jpg" alt="Massagem Relaxante" loading="lazy" />
+        <article class="servico" tabindex="0" aria-label="Serviço Massagem Relaxante">
+          <img data-src="img/mass-relaxante.webp" alt="Costas de uma pessoa recebendo massagem relaxante com óleos." loading="lazy" decoding="async" />
           <h3>Massagem Relaxante</h3>
           <p class="resumo">Técnica que alivia o estresse e as tensões musculares com movimentos suaves e contínuos.</p>
         </article>
 
-        <article class="servico" tabindex="0" role="button" aria-pressed="false"
-          aria-label="Serviço Massagem Terapêutica">
-          <img src="../img/mass-terapeutica.jpg" alt="Massagem Terapêutica" loading="lazy" />
+        <article class="servico" tabindex="0" aria-label="Serviço Massagem Terapêutica">
+          <img data-src="img/mass-terapeutica.webp" alt="Mãos de massoterapeuta aplicando pressão em ponto de tensão nas costas." loading="lazy" decoding="async" />
           <h3>Massagem Terapêutica</h3>
-          <p class="resumo">Atua no alívio de dores crônicas e tensões profundas, combinando técnicas manuais com foco
-            terapêutico.</p>
+          <p class="resumo">Atua no alívio de dores e tensões profundas, combinando técnicas manuais com foco terapêutico.</p>
         </article>
 
-        <article class="servico" tabindex="0" role="button" aria-pressed="false" aria-label="Serviço Depilação a Laser">
-          <img src="../img/dep-laser.jpg" alt="Depilação a Laser" loading="lazy" />
+        <article class="servico" tabindex="0" aria-label="Serviço Depilação a Laser">
+          <img data-src="img/dep-laser.webp" alt="Equipamento de depilação a laser sendo aplicado na perna de uma cliente." loading="lazy" decoding="async" />
           <h3>Depilação a Laser</h3>
-          <p class="resumo">Tecnologia eficaz para redução permanente dos pelos, proporcionando mais conforto e
-            praticidade.</p>
+          <p class="resumo">Tecnologia eficaz para redução permanente dos pelos, proporcionando conforto e praticidade.</p>
         </article>
 
-        <article class="servico" tabindex="0" role="button" aria-pressed="false" aria-label="Serviço Depilação a Cera">
-          <img src="../img/dep-cera.jpg" alt="Depilação a Cera" loading="lazy" />
+        <article class="servico" tabindex="0" aria-label="Serviço Depilação a Cera">
+          <img data-src="img/dep-cera.webp" alt="Esteticista aplicando cera morna para depilação." loading="lazy" decoding="async" />
           <h3>Depilação a Cera</h3>
-          <p class="resumo">Método tradicional que remove os pelos desde a raiz, deixando a pele lisa e macia por mais
-            tempo.</p>
+          <p class="resumo">Método tradicional que remove os pelos desde a raiz, deixando a pele lisa e macia por mais tempo.</p>
         </article>
-      </section>
+      </div>
     </section>
 
-    <!-- Agendamento -->
     <section class="agendamento" id="agendamento">
-      <section class="agendamento-header" id="agendamento-header">
+      <div class="agendamento-header">
         <h1>Entre em Contato</h1>
         <p>Estamos à disposição para ajudar e responder suas dúvidas</p>
-      </section>
+      </div>
 
-      <section class="cont-grid" id="cont-grid">
-        <section class="cont-info" id="cont-info">
-          <section class="cont-header" id="cont-header">
-            <h1>Vamos conversar</h1>
-            <p>Quer saber qual tratamento é ideal para você? Fale conosco — estamos aqui para te orientar com carinho e
-              profissionalismo.</p>
-          </section>
-          <section class="cont-list" id="cont-list">
-            <section class="cont-item">
-              <section class="cont-icon">
-                <i class="fas fa-envelope"></i>
-              </section>
-              <section class="cont-text">
+      <div class="cont-grid">
+        <div class="cont-info">
+          <div class="cont-header">
+            <h2>Vamos conversar</h2>
+            <p>Quer saber qual tratamento é ideal para você? Fale conosco — estamos aqui para te orientar com carinho e profissionalismo.</p>
+          </div>
+          <div class="cont-list">
+            <div class="cont-item">
+              <i class="fas fa-envelope"></i>
+              <div class="cont-text">
                 <h4>Email</h4>
-                <p></p>
-              </section>
-            </section>
-            <section class="cont-item">
-              <section class="cont-icon">
-                <i class="fas fa-phone-alt"></i>
-              </section>
-              <section class="cont-text">
+                <p><a href="mailto:carolinamiguelqueiroz@gmail.com">carolinamiguelqueiroz@gmail.com</a></p>
+              </div>
+            </div>
+            <div class="cont-item">
+              <i class="fas fa-phone-alt"></i>
+              <div class="cont-text">
                 <h4>Telefone</h4>
-                <p>(31) 99999-9999</p>
-              </section>
-            </section>
-            <section class="cont-item">
-              <section class="cont-icon">
-                <i class="fas fa-map-marker-alt"></i>
-              </section>
-              <section class="cont-text">
+                <p><a href="tel:+5531997459813">(31) 9 9745-9813</a></p>
+              </div>
+            </div>
+            <div class="cont-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="cont-text">
                 <h4>Localização</h4>
                 <p>Belo Horizonte - MG</p>
-              </section>
-            </section>
-            <sectio class="social-icons">
-              <a href="https://www.instagram.com/dr.carolinaqueiroz/" target="_blank" class="social-icon">
-                <i class="fab fa-instagram"></i>
-              </a>
-              <a href="https://www.facebook.com/carolina.queiroz.35977" target="_blank" class="social-icon">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="https://www.tiktok.com/@carolqueiroz43" target="_blank" class="social-icon">
-                <i class="fab fa-tiktok"></i>
-              </a>
-              <a href="https://www.youtube.com/@detalhescomcarol1442" target="_blank" class="social-icon">
-                <i class="fab fa-youtube"></i>
-              </a>
-              <a href="https://wa.me/5521999693016" target="_blank" class="social-icon">
-                <i class="fab fa-whatsapp"></i>
-              </a>
-          </section>
-        </section>
-        <section class="form" id="form" aria-label="Formulário de agendamento">
+              </div>
+            </div>
+          </div>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/carolina_mqueiroz/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/5531997459813" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="form" aria-label="Formulário de agendamento">
           <h2>Agendamento</h2>
           <form id="form-agendamento">
             <label for="nome">Nome</label>
-            <input type="text" id="nome" name="nome" required aria-required="true" aria-label="Digite seu nome" />
+            <input type="text" id="nome" name="nome" required aria-required="true" />
 
             <label for="procedimento">Procedimento</label>
-            <select id="procedimento" name="procedimento" required aria-required="true"
-              aria-label="Selecione o procedimento">
+            <select id="procedimento" name="procedimento" required>
               <option value="">Selecione</option>
               <option value="Limpeza de Pele">Limpeza de Pele</option>
               <option value="Massagem Relaxante">Massagem Relaxante</option>
@@ -218,91 +201,68 @@
             </select>
 
             <label for="mensagem">Mensagem</label>
-            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva uma mensagem..."
-              aria-label="Mensagem opcional"></textarea>
+            <textarea id="mensagem" rows="4" placeholder="Escreva uma mensagem..."></textarea>
 
-            <section class="form-buttons">
-              <button type="submit" class="whatsapp-button" aria-label="Enviar agendamento via WhatsApp">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#fff" viewBox="0 0 24 24"
-                  aria-hidden="true" focusable="false">
-                  <path
-                    d="M20.52 3.48A11.87 11.87 0 0 0 12 0a11.88 11.88 0 0 0-10.3 17.8L0 24l6.4-1.67A11.91 11.91 0 0 0 12 24a11.88 11.88 0 0 0 8.52-20.52zM12 21.92a9.89 9.89 0 0 1-5.1-1.4l-.37-.22-3.8 1 .9-3.7-.24-.38A9.89 9.89 0 1 1 12 21.92zm5.34-7.59c-.3-.15-1.77-.87-2.05-.97s-.47-.15-.67.15-.77.96-.95 1.16-.35.22-.64.07a8.15 8.15 0 0 1-2.4-1.48 9 9 0 0 1-1.66-2.06c-.17-.29 0-.44.13-.6s.29-.35.44-.52a2.1 2.1 0 0 0 .3-.51.55.55 0 0 0 0-.52c-.07-.15-.67-1.62-.91-2.23s-.48-.52-.67-.52-.37 0-.56 0a1.08 1.08 0 0 0-.78.37 3.3 3.3 0 0 0-1 2.45 5.79 5.79 0 0 0 1.21 3.13 13.49 13.49 0 0 0 5.34 4.53 6.6 6.6 0 0 0 3.1.82 2.79 2.79 0 0 0 1.82-.79 2.3 2.3 0 0 0 .5-1.65c-.07-.15-.27-.22-.57-.37z" />
-                </svg>
-                Agendar via WhatsApp
+            <div class="form-buttons">
+              <button type="submit" class="whatsapp-button">
+                <i class="fab fa-whatsapp"></i> Agendar via WhatsApp
               </button>
-
-              <button type="reset" class="clear-button" aria-label="Limpar formulário">Limpar</button>
-            </section>
-
-            <!-- Feedback simples -->
-            <p id="form-feedback" role="alert" aria-live="assertive"
-              style="display:none; color: green; margin-top:10px;">
+              <button type="reset" class="clear-button">Limpar</button>
+            </div>
+            <p id="form-feedback" style="display:none; color: green; margin-top:10px;">
               Mensagem pronta para envio no WhatsApp!
             </p>
           </form>
-        </section>
-      </section>
-
-      <!-- Instagram -->
-      <section id="instagram" class="instagram-feed" aria-label="Feed do Instagram">
-        <h2>Instagram</h2>
-        <p>Veja resultados, bastidores e muito mais:</p>
-
-        <div class="feed-grid">
-          <img src="../img/feed1.jpg" alt="Foto de atendimento estético" loading="lazy" />
-          <img src="../img/feed2.jpg" alt="Foto de resultado de sobrancelha" loading="lazy" />
-          <img src="../img/feed3.jpg" alt="Massagem relaxante" loading="lazy" />
-          <img src="../img/feed4.jpg" alt="Produtos utilizados" loading="lazy" />
         </div>
+      </div>
+    </section>
 
-        <a href="https://www.instagram.com/carolina_mqueiroz/" target="_blank" rel="noopener noreferrer"
-          class="btn-instagram" aria-label="Ver mais no Instagram">
-          <i class="fab fa-instagram" aria-hidden="true"></i> Ver mais no Instagram
-        </a>
-      </section>
+    <div id="modal-historia" class="modal-overlay">
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Fechar modal">&times;</button>
+        <h2>Minha História</h2>
+        <p>Antes de me dedicar à estética, atuei na enfermagem — e ali percebi como o cuidado e o toque humano podem transformar vidas...</p>
+        <p>Hoje, levo essa essência para cada tratamento. Meu trabalho é unir beleza e bem-estar com segurança, carinho e resultados reais.</p>
+      </div>
+    </div>
+  </main>
 
-      <!-- Footer -->
-      <footer>
-        <footer class="site-footer">
-          <div class="footer-container">
-            <div class="footer-col">
-              <img src="../img/logo.jpg" alt="Logo Estética" class="footer-logo">
-              <p class="footer-slogan">Realçando sua beleza, com carinho e dedicação.</p>
-            </div>
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <img data-src="img/logo.webp" alt="Logo da Estética Carolina Queiroz." class="footer-logo" loading="lazy" decoding="async" />
+        <p class="footer-slogan">Realçando sua beleza, com carinho e dedicação.</p>
+      </div>
 
-            <div class="footer-col">
-              <h4>Links</h4>
-              <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#agendamento">Agendamento</a></li>
-                <li><a href="#contato">Contato</a></li>
-              </ul>
-            </div>
+      <div class="footer-col">
+        <h4>Links</h4>
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#agendamento">Agendamento</a></li>
+        </ul>
+      </div>
 
-            <div class="footer-col">
-              <h4>Contato</h4>
-              <p>📞 (31) 99999-9999</p>
-              <p>📍 Belo Horizonte - MG</p>
-              <p>📧 atendimento@esteticacarol.com</p>
-            </div>
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <p>📞<a href="tel:+5531997459813">(31) 99745-9813</a></p>
+        <p>📍 Belo Horizonte - MG</p>
+        <p>📧 <a href="mailto:carolinamiguelqueiroz@gmail.com">carolinamiguelqueiroz@gmail.com</a></p>
+      </div>
 
-            <div class="footer-col">
-              <h4>Redes Sociais</h4>
-              <div class="social-icons">
-                <a href="https://www.instagram.com" target="_blank"><img src="img/instagram.svg" alt="Instagram" /></a>
-                <a href="https://wa.me/5531999999999" target="_blank"><img src="img/whatsapp.svg" alt="WhatsApp" /></a>
-              </div>
-            </div>
-          </div>
+      <div class="footer-col">
+        <h4>Redes Sociais</h4>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/carolina_mqueiroz/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/5531997459813" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
 
-          <div class="footer-bottom">
-            <p>&copy; 2025 Estética Carol. Todos os direitos reservados.</p>
-            <p>Desenvolvido por <strong>Michael Dev</strong> 💻</p>
-          </div>
-        </footer>
-
-      </footer>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Estética Carol. Todos os direitos reservados.</p>
+      <p>Desenvolvido por <strong>Michael Dutra</strong> 💻</p>
+    </div>
+  </footer>
 </body>
-
 </html>
