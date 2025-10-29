@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initHistoriaModal();
   initThemeToggle();
   initLazyLoading();
+  initHamburgerMenu();
 });
 
 // ============================================================
@@ -153,4 +154,27 @@ function initLazyLoading() {
   } else {
     lazyImages.forEach(img => { img.src = img.dataset.src; });
   }
+}
+// ============================================================
+// 7. MENU HAMBÚRGUER
+// ============================================================
+function initHamburgerMenu() {
+  const hamburger = document.querySelector('.hamburger');
+  const menu = document.querySelector('.menu');
+
+  if (!hamburger || !menu) return; // Verifica se os elementos existem
+
+  // 1. Alterna as classes ao clicar no botão
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    menu.classList.toggle('show');
+  });
+
+  // 2. (Bônus) Fecha o menu se o usuário clicar em um link
+  menu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('active');
+      menu.classList.remove('show');
+    });
+  });
 }

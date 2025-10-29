@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,14 +19,16 @@
   <meta property="og:title" content="Carolina Queiroz | Estética e Bem-estar" />
   <meta property="og:description"
     content="Beleza e cuidado com atendimento profissional em Belo Horizonte. Conheça os serviços de Carolina Queiroz." />
-  <meta property="og:image" content="https://esteticacarolinaqueiroz.netlify.app/img/capa1.jpg" />
+  <!-- SEO otimizado -->
+  <meta property="og:image" content="https://esteticacarolinaqueiroz.netlify.app/img/capa1.webp" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Carolina Queiroz | Esteticista em BH" />
   <meta name="twitter:description"
     content="Tratamentos personalizados em estética e bem-estar. Conheça os serviços!" />
-  <meta name="twitter:image" content="https://esteticacarolinaqueiroz.netlify.app/img/capa1.jpg" />
+  <!-- SEO otimizado -->
+  <meta name="twitter:image" content="https://esteticacarolinaqueiroz.netlify.app/img/capa1.webp" />
 
   <link rel="canonical" href="https://esteticacarolinaqueiroz.netlify.app/" />
   <link rel="icon" href="img/logo.webp" type="image/webp" />
@@ -44,6 +45,9 @@
       <div class="logo">
         <a href="#">Carolina Queiroz</a>
       </div>
+      <button class="hamburger" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+       </button>
       <div class="menu-wrapper">
         <ul class="menu">
           <li><a href="#">Início</a></li>
@@ -70,18 +74,21 @@
 
       <div class="hero-gallery" aria-label="Galeria de fotos do Hero">
         <article class="hero-card" tabindex="0" role="button" aria-label="Conheça os serviços">
-          <img src="img/capa2.webp" alt="Mulher recebendo tratamento estético facial com máscara de argila." decoding="async" />
+          <img src="img/capa2.webp" alt="Cliente recebendo tratamento facial com máscara de argila em Belo Horizonte."
+            width="600" height="400" decoding="async" />
           <a href="#servicos" class="card-button">Conheça os serviços</a>
         </article>
 
         <article class="hero-card" tabindex="0" role="button" aria-label="Agendar no WhatsApp">
-          <img src="img/capa1.webp" alt="Ambiente de massagem com maca, toalhas e iluminação suave." loading="lazy" />
+          <img src="img/capa1.webp" alt="Ambiente de massagem relaxante com maca e iluminação suave."
+            width="600" height="400" loading="lazy" decoding="async" />
           <a href="https://wa.me/5531997459813" class="card-button" target="_blank" rel="noopener noreferrer">Agendar no
             WhatsApp</a>
         </article>
 
         <article class="hero-card" tabindex="0" role="button" aria-label="Sobre Carolina Queiroz">
-          <img src="img/carolina.webp" alt="Retrato profissional da esteticista Carolina Queiroz." loading="lazy" />
+          <img src="img/carolina.webp" alt="Retrato profissional da esteticista Carolina Queiroz, especialista em estética facial."
+            width="600" height="400" loading="lazy" decoding="async" />
           <a href="#sobre" class="card-button">Sobre mim</a>
         </article>
       </div>
@@ -94,7 +101,9 @@
     <section id="sobre" aria-label="Seção sobre Carolina">
       <div class="sobre-container">
         <div class="sobre-img">
-        <img data-src="img/carolina-sobre.webp" alt="Carolina Queiroz - Esteticista" loading="lazy" decoding="async" />
+          <img src="img/carolina-sobre.webp" data-src="img/carolina-sobre.webp"
+            alt="Carolina Queiroz, esteticista especializada em cuidados faciais e bem-estar em Belo Horizonte."
+            width="500" height="500" loading="lazy" decoding="async" />
         </div>
         <div class="sobre-texto">
           <h2>Sobre Carolina</h2>
@@ -112,31 +121,41 @@
       <h2>Meus Serviços</h2>
       <div class="servicos-container">
         <article class="servico" tabindex="0" aria-label="Serviço Limpeza de Pele">
-          <img data-src="img/limpeza-pele.webp" alt="Rosto de cliente recebendo procedimento de limpeza de pele profissional." loading="lazy" decoding="async" />
+          <img src="img/limpeza-pele.webp" data-src="img/limpeza-pele.webp"
+            alt="Cliente recebendo procedimento profissional de limpeza de pele em Belo Horizonte."
+            width="400" height="300" loading="lazy" decoding="async" />
           <h3>Limpeza de Pele</h3>
           <p class="resumo">Remove impurezas, células mortas e controla a oleosidade, deixando a pele saudável e revitalizada.</p>
         </article>
 
         <article class="servico" tabindex="0" aria-label="Serviço Massagem Relaxante">
-          <img data-src="img/mass-relaxante.webp" alt="Costas de uma pessoa recebendo massagem relaxante com óleos." loading="lazy" decoding="async" />
+          <img src="img/mass-relaxante.webp" data-src="img/mass-relaxante.webp"
+            alt="Cliente relaxando durante sessão de massagem relaxante profissional com óleos."
+            width="400" height="300" loading="lazy" decoding="async" />
           <h3>Massagem Relaxante</h3>
           <p class="resumo">Técnica que alivia o estresse e as tensões musculares com movimentos suaves e contínuos.</p>
         </article>
 
         <article class="servico" tabindex="0" aria-label="Serviço Massagem Terapêutica">
-          <img data-src="img/mass-terapeutica.webp" alt="Mãos de massoterapeuta aplicando pressão em ponto de tensão nas costas." loading="lazy" decoding="async" />
+          <img src="img/mass-terapeutica.webp" data-src="img/mass-terapeutica.webp"
+            alt="Massoterapeuta aplicando técnica terapêutica nas costas da cliente."
+            width="400" height="300" loading="lazy" decoding="async" />
           <h3>Massagem Terapêutica</h3>
           <p class="resumo">Atua no alívio de dores e tensões profundas, combinando técnicas manuais com foco terapêutico.</p>
         </article>
 
         <article class="servico" tabindex="0" aria-label="Serviço Depilação a Laser">
-          <img data-src="img/dep-laser.webp" alt="Equipamento de depilação a laser sendo aplicado na perna de uma cliente." loading="lazy" decoding="async" />
+          <img src="img/dep-laser.webp" data-src="img/dep-laser.webp"
+            alt="Aplicação de depilação a laser profissional na perna de cliente."
+            width="400" height="300" loading="lazy" decoding="async" />
           <h3>Depilação a Laser</h3>
           <p class="resumo">Tecnologia eficaz para redução permanente dos pelos, proporcionando conforto e praticidade.</p>
         </article>
 
         <article class="servico" tabindex="0" aria-label="Serviço Depilação a Cera">
-          <img data-src="img/dep-cera.webp" alt="Esteticista aplicando cera morna para depilação." loading="lazy" decoding="async" />
+          <img src="img/dep-cera.webp" data-src="img/dep-cera.webp"
+            alt="Profissional aplicando cera morna para depilação feminina em Belo Horizonte."
+            width="400" height="300" loading="lazy" decoding="async" />
           <h3>Depilação a Cera</h3>
           <p class="resumo">Método tradicional que remove os pelos desde a raiz, deixando a pele lisa e macia por mais tempo.</p>
         </article>
@@ -230,7 +249,9 @@
   <footer class="site-footer">
     <div class="footer-container">
       <div class="footer-col">
-        <img data-src="img/logo.webp" alt="Logo da Estética Carolina Queiroz." class="footer-logo" loading="lazy" decoding="async" />
+        <img src="img/logo.webp" data-src="img/logo.webp"
+          alt="Logotipo da Esteticista Carolina Queiroz em Belo Horizonte." width="120" height="120"
+          class="footer-logo" loading="lazy" decoding="async" />
         <p class="footer-slogan">Realçando sua beleza, com carinho e dedicação.</p>
       </div>
 

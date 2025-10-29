@@ -631,3 +631,259 @@ input:focus,select:focus,textarea:focus{border-color:var(--cor-marrom-medio);box
 [data-theme="dark"] .footer-col p a:hover {
   color: #e1c48d; /* Mesma cor de hover dos links da lista dark mode */
 }
+/* ===== AJUSTE DO MENU MOBILE ===== */
+
+/* botão hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 26px;
+  height: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: var(--cor-marrom-suave);
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+/* Estado ativo (X) */
+.hamburger.active span:nth-child(1) {
+  transform: translateY(7.5px) rotate(45deg);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-7.5px) rotate(-45deg);
+}
+
+/* menu mobile oculto */
+@media (max-width: 768px) {
+  .menu-wrapper {
+    position: relative;
+  }
+
+  .menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    background-color: var(--cor-bege-claro);
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid var(--cor-marrom-medio);
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    opacity: 0;
+    transform: translateY(-15px);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    z-index: 1000;
+  }
+
+  .menu.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .menu a {
+    padding: 1rem 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  /* esconde menu padrão */
+  .menu-wrapper {
+    justify-content: flex-end;
+    width: auto;
+  }
+}
+/* ===== AJUSTES DE RESPONSIVIDADE ===== */
+
+/* Tablets e telas médias (entre 769px e 1100px) */
+@media (max-width: 1100px) {
+  .navbar {
+    flex-direction: row;
+    padding: 1rem;
+  }
+
+  .hero-phrases .phrase {
+    font-size: 1.8rem;
+  }
+
+  .hero-gallery {
+    gap: 20px;
+  }
+
+  .hero-card {
+    width: 280px;
+    height: 380px;
+  }
+
+  .sobre-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .sobre-img {
+    max-width: 380px;
+  }
+
+  .sobre-texto {
+    text-align: center;
+  }
+
+  #servicos .servicos-container {
+    gap: 20px;
+  }
+
+  .servico {
+    width: 240px;
+    height: 300px;
+  }
+
+  .cont-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .form {
+    width: 90%;
+  }
+}
+
+/* Telas pequenas (até 768px) */
+@media (max-width: 768px) {
+  header {
+    padding: 0.8rem 1rem;
+  }
+
+  .logo a {
+    font-size: 1.4rem;
+    padding: 0.4rem 0.9rem;
+  }
+
+  .hero {
+    padding: 40px 15px;
+  }
+
+  .hero-phrases .phrase {
+    font-size: 1.5rem;
+  }
+
+  .hero-card {
+    width: 100%;
+    max-width: 340px;
+    height: auto;
+    aspect-ratio: 3/4;
+  }
+
+  .transicao h1 {
+    font-size: 1.6rem;
+  }
+
+  .sobre-texto h2 {
+    font-size: 2rem;
+  }
+
+  .sobre-texto p {
+    font-size: 1rem;
+  }
+
+  #servicos h2 {
+    font-size: 1.8rem;
+  }
+
+  .servico {
+    width: 90%;
+    max-width: 320px;
+    height: 280px;
+  }
+
+  .agendamento-header h1 {
+    font-size: 2rem;
+  }
+
+  .agendamento-header p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .cont-info {
+    padding: 20px;
+  }
+
+  .form {
+    padding: 20px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-col {
+    text-align: center;
+  }
+
+  .footer-logo {
+    margin: 0 auto 15px;
+  }
+
+  .footer-bottom {
+    font-size: 0.85rem;
+  }
+}
+
+/* Telas muito pequenas (até 480px) */
+@media (max-width: 480px) {
+  .hero-phrases .phrase {
+    font-size: 1.3rem;
+  }
+
+  .hero-card {
+    max-width: 300px;
+  }
+
+  .sobre-texto h2 {
+    font-size: 1.8rem;
+  }
+
+  .sobre-texto h3 {
+    font-size: 1.1rem;
+  }
+
+  .servico h3 {
+    font-size: 1.1rem;
+    padding: 20px 12px 10px;
+  }
+
+  .form h2 {
+    font-size: 1.6rem;
+  }
+
+  .whatsapp-button,
+  .clear-button {
+    padding: 10px 18px;
+    font-size: 0.9rem;
+  }
+
+  .footer-col h4 {
+    font-size: 1rem;
+  }
+}
