@@ -670,24 +670,26 @@ input:focus,select:focus,textarea:focus{border-color:var(--cor-marrom-medio);box
 @media (max-width: 768px) {
   .menu-wrapper {
     position: relative;
+    width: 100%;
   }
 
   .menu {
-    position: absolute;
-    top: 100%;
-    right: 0;
+    position: fixed; /* Fixa o menu dentro da tela */
+    top: 70px; /* altura do header */
+    left: 0;
     width: 100%;
     background-color: var(--cor-bege-claro);
     flex-direction: column;
     align-items: center;
-    border: 2px solid var(--cor-marrom-medio);
-    border-radius: 12px;
+    border-top: 2px solid var(--cor-marrom-medio);
+    border-bottom: 2px solid var(--cor-marrom-medio);
+    border-radius: 0;
     box-shadow: 0 6px 12px rgba(0,0,0,0.15);
     opacity: 0;
     transform: translateY(-15px);
     pointer-events: none;
     transition: all 0.3s ease;
-    z-index: 1000;
+    z-index: 999;
   }
 
   .menu.show {
@@ -700,6 +702,11 @@ input:focus,select:focus,textarea:focus{border-color:var(--cor-marrom-medio);box
     padding: 1rem 0;
     width: 100%;
     text-align: center;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+  }
+
+  .menu a:last-child {
+    border-bottom: none;
   }
 
   .hamburger {
