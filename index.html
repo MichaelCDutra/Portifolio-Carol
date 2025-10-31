@@ -36,22 +36,24 @@
   <!-- Ícone -->
   <link rel="icon" href="img/logo.webp" type="image/webp" />
 
-  <!-- CSS principal - preload e non-blocking -->
-  <link rel="preload" href="/css/home.css" as="style" />
-  <link rel="stylesheet" href="/css/home.css" media="print" onload="this.media='all'" />
+  <!-- Preload da imagem principal (LCP) -->
+  <link rel="preload" as="image" href="img/capa2.webp" fetchpriority="high">
 
-  <!-- Fontes e ícones -->
+  <!-- CSS principal -->
+  <link rel="preload" href="/css/home.css" as="style">
+  <link rel="stylesheet" href="/css/home.css" media="print" onload="this.media='all'">
+
+  <!-- Fontes Google -->
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print" onload="this.media='all'">
 
   <!-- Script principal -->
   <script src="/js/home.js" defer></script>
 
-  <!-- Fallback caso CSS externo não carregue -->
-  <noscript>
-    <link rel="stylesheet" href="/css/home.css" />
-  </noscript>
+  <noscript><link rel="stylesheet" href="/css/home.css"></noscript>
 </head>
 
 <body>
@@ -85,15 +87,15 @@
 
       <div class="hero-gallery" aria-label="Galeria de fotos do Hero">
         <article class="hero-card" tabindex="0" role="button" aria-label="Conheça os serviços">
-          <img src="img/capa2.webp" alt="Cliente recebendo tratamento facial com máscara de argila em Belo Horizonte." width="600" height="400" decoding="async" fetchpriority="high" />
+          <img src="img/capa2.webp" alt="Cliente recebendo tratamento facial com máscara de argila em Belo Horizonte." width="600" height="400" decoding="async" fetchpriority="high">
           <a href="#servicos" class="card-button">Conheça os serviços</a>
         </article>
         <article class="hero-card" tabindex="0" role="button" aria-label="Agendar no WhatsApp">
-          <img src="img/capa1.webp" alt="Ambiente de massagem relaxante com maca e iluminação suave." width="600" height="400" loading="lazy" decoding="async" />
+          <img src="img/capa1.webp" alt="Ambiente de massagem relaxante com maca e iluminação suave." width="600" height="400" loading="lazy" decoding="async">
           <a href="https://wa.me/5531997459813" class="card-button" target="_blank" rel="noopener noreferrer">Agendar no WhatsApp</a>
         </article>
         <article class="hero-card" tabindex="0" role="button" aria-label="Sobre Carolina Queiroz">
-          <img src="img/carolina.webp" alt="Retrato profissional da esteticista Carolina Queiroz, especialista em estética facial." width="600" height="400" loading="lazy" decoding="async" />
+          <img src="img/carolina.webp" alt="Retrato profissional da esteticista Carolina Queiroz, especialista em estética facial." width="600" height="400" loading="lazy" decoding="async">
           <a href="#sobre" class="card-button">Sobre mim</a>
         </article>
       </div>
@@ -106,7 +108,7 @@
     <section id="sobre" aria-label="Seção sobre Carolina">
       <div class="sobre-container">
         <div class="sobre-img">
-          <img src="img/carolinaqueiroz-sobre.webp" alt="Carolina Queiroz, esteticista especializada em cuidados faciais e bem-estar em Belo Horizonte." width="500" height="500" loading="lazy" decoding="async" />
+          <img src="img/carolinaqueiroz-sobre.webp" alt="Carolina Queiroz, esteticista especializada em cuidados faciais e bem-estar em Belo Horizonte." width="500" height="500" loading="lazy" decoding="async">
         </div>
         <div class="sobre-texto">
           <h2>Sobre Carolina</h2>
@@ -120,36 +122,12 @@
     <section id="servicos" aria-label="Seção de serviços oferecidos">
       <h2>Meus Serviços</h2>
       <div class="servicos-container">
-        <article class="servico" tabindex="0" aria-label="Serviço Limpeza de Pele">
-          <img src="img/limpeza-pele.webp" alt="Cliente recebendo procedimento profissional de limpeza de pele em Belo Horizonte." width="400" height="300" loading="lazy" decoding="async" />
-          <h3>Limpeza de Pele</h3>
-          <p class="resumo">Remove impurezas, células mortas e controla a oleosidade, deixando a pele saudável e revitalizada.</p>
-        </article>
-        <article class="servico" tabindex="0" aria-label="Serviço Massagem Relaxante">
-          <img src="img/mass-relaxante.webp" alt="Cliente relaxando durante sessão de massagem relaxante profissional com óleos." width="400" height="300" loading="lazy" decoding="async" />
-          <h3>Massagem Relaxante</h3>
-          <p class="resumo">Técnica que alivia o estresse e as tensões musculares com movimentos suaves e contínuos.</p>
-        </article>
-        <article class="servico" tabindex="0" aria-label="Serviço Massagem Terapêutica">
-          <img src="img/mass-terapeutica.webp" alt="Massoterapeuta aplicando técnica terapêutica nas costas da cliente." width="400" height="300" loading="lazy" decoding="async" />
-          <h3>Massagem Terapêutica</h3>
-          <p class="resumo">Atua no alívio de dores e tensões profundas, combinando técnicas manuais com foco terapêutico.</p>
-        </article>
-        <article class="servico" tabindex="0" aria-label="Serviço Depilação a Laser">
-          <img src="img/dep-laser.webp" alt="Aplicação de depilação a laser profissional na perna de cliente." width="400" height="300" loading="lazy" decoding="async" />
-          <h3>Depilação a Laser</h3>
-          <p class="resumo">Tecnologia eficaz para redução permanente dos pelos, proporcionando conforto e praticidade.</p>
-        </article>
-        <article class="servico" tabindex="0" aria-label="Serviço Depilação a Cera">
-          <img src="img/dep-cera.webp" alt="Profissional aplicando cera morna para depilação feminina em Belo Horizonte." width="400" height="300" loading="lazy" decoding="async" />
-          <h3>Depilação a Cera</h3>
-          <p class="resumo">Método tradicional que remove os pelos desde a raiz, deixando a pele lisa e macia por mais tempo.</p>
-        </article>
-        <article class="servico" tabindex="0" aria-label="Serviço Injetável">
-          <img src="img/injetavel.webp" alt="Profissional de estética aplicando tratamento injetável facial em paciente em clínica especializada em Belo Horizonte." width="400" height="300" loading="lazy" decoding="async" />
-          <h3>Injetável</h3>
-          <p class="resumo">Tratamentos que utilizam ativos aplicados diretamente na pele para resultados rápidos e eficazes! Podem ajudar na gordura localizada, rejuvenescimento, crescimento capilar, firmeza e hidratação da pele.</p>
-        </article>
+        <article class="servico"><img src="img/limpeza-pele.webp" alt="Cliente recebendo procedimento profissional de limpeza de pele em Belo Horizonte." width="400" height="300" loading="lazy" decoding="async"><h3>Limpeza de Pele</h3><p class="resumo">Remove impurezas, células mortas e controla a oleosidade, deixando a pele saudável e revitalizada.</p></article>
+        <article class="servico"><img src="img/mass-relaxante.webp" alt="Cliente relaxando durante sessão de massagem relaxante profissional com óleos." width="400" height="300" loading="lazy" decoding="async"><h3>Massagem Relaxante</h3><p class="resumo">Técnica que alivia o estresse e as tensões musculares com movimentos suaves e contínuos.</p></article>
+        <article class="servico"><img src="img/mass-terapeutica.webp" alt="Massoterapeuta aplicando técnica terapêutica nas costas da cliente." width="400" height="300" loading="lazy" decoding="async"><h3>Massagem Terapêutica</h3><p class="resumo">Atua no alívio de dores e tensões profundas, combinando técnicas manuais com foco terapêutico.</p></article>
+        <article class="servico"><img src="img/dep-laser.webp" alt="Aplicação de depilação a laser profissional na perna de cliente." width="400" height="300" loading="lazy" decoding="async"><h3>Depilação a Laser</h3><p class="resumo">Tecnologia eficaz para redução permanente dos pelos, proporcionando conforto e praticidade.</p></article>
+        <article class="servico"><img src="img/dep-cera.webp" alt="Profissional aplicando cera morna para depilação feminina em Belo Horizonte." width="400" height="300" loading="lazy" decoding="async"><h3>Depilação a Cera</h3><p class="resumo">Método tradicional que remove os pelos desde a raiz, deixando a pele lisa e macia por mais tempo.</p></article>
+        <article class="servico"><img src="img/injetavel.webp" alt="Profissional de estética aplicando tratamento injetável facial em paciente em clínica especializada em Belo Horizonte." width="400" height="300" loading="lazy" decoding="async"><h3>Injetável</h3><p class="resumo">Tratamentos que utilizam ativos aplicados diretamente na pele para resultados rápidos e eficazes.</p></article>
       </div>
     </section>
 
@@ -158,35 +136,17 @@
         <h1>Entre em Contato</h1>
         <p>Estamos à disposição para ajudar e responder suas dúvidas</p>
       </div>
-
       <div class="cont-grid">
         <div class="cont-info">
           <div class="cont-header">
             <h2>Vamos conversar</h2>
             <p>Quer saber qual tratamento é ideal para você? Fale conosco — estamos aqui para te orientar com carinho e profissionalismo.</p>
           </div>
-
           <div class="cont-list">
-            <div class="cont-item"><i class="fas fa-envelope"></i>
-              <div class="cont-text">
-                <h4>Email</h4>
-                <p><a href="mailto:carolinamiguelqueiroz@gmail.com">carolinamiguelqueiroz@gmail.com</a></p>
-              </div>
-            </div>
-            <div class="cont-item"><i class="fas fa-phone-alt"></i>
-              <div class="cont-text">
-                <h4>Telefone</h4>
-                <p><a href="tel:+5531997459813">(31) 9 9745-9813</a></p>
-              </div>
-            </div>
-            <div class="cont-item"><i class="fas fa-map-marker-alt"></i>
-              <div class="cont-text">
-                <h4>Localização</h4>
-                <p>Belo Horizonte - MG</p>
-              </div>
-            </div>
+            <div class="cont-item"><i class="fas fa-envelope"></i><div class="cont-text"><h4>Email</h4><p><a href="mailto:carolinamiguelqueiroz@gmail.com">carolinamiguelqueiroz@gmail.com</a></p></div></div>
+            <div class="cont-item"><i class="fas fa-phone-alt"></i><div class="cont-text"><h4>Telefone</h4><p><a href="tel:+5531997459813">(31) 9 9745-9813</a></p></div></div>
+            <div class="cont-item"><i class="fas fa-map-marker-alt"></i><div class="cont-text"><h4>Localização</h4><p>Belo Horizonte - MG</p></div></div>
           </div>
-
           <div class="social-icons">
             <a href="https://www.instagram.com/carolina_mqueiroz/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
             <a href="https://wa.me/5531997459813" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
@@ -197,7 +157,7 @@
           <h2>Agendamento</h2>
           <form id="form-agendamento">
             <label for="nome">Nome</label>
-            <input type="text" id="nome" name="nome" required aria-required="true" />
+            <input type="text" id="nome" name="nome" required aria-required="true">
             <label for="procedimento">Procedimento</label>
             <select id="procedimento" name="procedimento" required>
               <option value="">Selecione</option>
@@ -233,7 +193,7 @@
   <footer class="site-footer">
     <div class="footer-container">
       <div class="footer-col">
-        <img src="img/logo.webp" alt="Logotipo da Esteticista Carolina Queiroz em Belo Horizonte." width="120" height="120" class="footer-logo" loading="lazy" decoding="async" />
+        <img src="img/logo.webp" alt="Logotipo da Esteticista Carolina Queiroz em Belo Horizonte." width="120" height="120" class="footer-logo" loading="lazy" decoding="async">
         <p class="footer-slogan">Realçando sua beleza, com carinho e dedicação.</p>
       </div>
       <div class="footer-col">
