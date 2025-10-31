@@ -675,7 +675,7 @@ input:focus,select:focus,textarea:focus{border-color:var(--cor-marrom-medio);box
 
   .menu {
     position: fixed; /* Fixa o menu dentro da tela */
-    top: 70px; /* altura do header */
+    top: 70px; 
     left: 0;
     width: 100%;
     background-color: var(--cor-bege-claro);
@@ -713,7 +713,6 @@ input:focus,select:focus,textarea:focus{border-color:var(--cor-marrom-medio);box
     display: flex;
   }
 
-  /* esconde menu padrão */
   .menu-wrapper {
     justify-content: flex-end;
     width: auto;
