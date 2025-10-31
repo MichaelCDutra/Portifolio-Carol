@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://fonts.gstatic.com/s/playfairdisplay/v40/nuFvD-vYSZviVYUb_rj3ij__anPXDTzYhHcqfKjN.woff2') format('woff2');
+}
+
 :root{
   --cor-bege-claro:#fff8f0;
   --cor-marrom-suave:#4a3f3f;
@@ -139,6 +147,7 @@ header{
   position:relative;
   max-width:800px;
   margin-inline:auto;
+  min-height: 3.5em;
 }
 
 .hero-phrases .phrase{
@@ -168,6 +177,11 @@ header{
   gap:30px;
   max-width:1200px;
   margin:0 auto;
+}
+
+.hero-gallery img {
+  aspect-ratio: 3 / 2;
+  display: block;
 }
 
 .hero-card{
