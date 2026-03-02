@@ -5,6 +5,9 @@ tools/**
 # Relatórios de Auditoria Lighthouse
 lighthouse-report-*.html
 lighthouse-report-*.json
+# arquivos de saída direto do CLI
+lighthouse-desktop.json
+lighthouse-mobile.json
 
 # Documentação Interna
 TODO.md
@@ -15,6 +18,9 @@ css/home.pruned.css
 
 # Arquivos JavaScript Originais (mantém apenas minificados)
 js/home.js
+
+# scripts temporários de análise
+temp_*.py
 
 # Dependências
 node_modules/
