@@ -8,22 +8,6 @@
   src: url('https://fonts.gstatic.com/s/playfairdisplay/v40/nuFvD-vYSZviVYUb_rj3ij__anPXDTzYhHcqfKjN.woff2') format('woff2');
 }
 
-@font-face {
-  font-family: 'Font Awesome 6 Free';
-  font-style: normal;
-  font-weight: 900;
-  font-display: swap;
-  src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/webfonts/fa-solid-900.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'Font Awesome 6 Brands';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/webfonts/fa-brands-400.woff2') format('woff2');
-}
-
 :root{
   --cor-bege-claro:#fff8f0;
   --cor-marrom-suave:#4a3f3f;
@@ -62,6 +46,11 @@ body{
   font-family:Arial, sans-serif;
   background-color:var(--bg-primary);
   background-image:url(../img/fundo.webp);
+
+/* smaller versions used for mobile to save bytes */
+@media (max-width: 600px) {
+  body { background-image:url(../img/fundo-400.webp); }
+}
   background-size:cover;
   background-repeat:no-repeat;
   background-position:center;
@@ -74,6 +63,8 @@ body{
   -moz-osx-font-smoothing:grayscale;
 }
 img{max-width:100%;display:block;height:auto}
+.social-icon svg{vertical-align:middle;fill:currentColor;}
+.whatsapp-button svg{width:0.9em;height:0.9em;vertical-align:middle;margin-right:0.3em;fill:currentColor;}
 a,button{color:inherit;text-decoration:none;transition:all .25s ease}
 input,select,textarea{font-family:inherit}
 ::selection{background:var(--cor-marrom-medio);color:#fff}
@@ -256,7 +247,8 @@ input:focus,select:focus,textarea:focus{border-color:var(--cor-marrom-medio);box
 
 /* Social icons */
 .social-icons{display:flex;justify-content:flex-start;margin:30px 0 0;gap:25px}
-.social-icon{font-size:2.2rem;color:var(--cor-marrom-medio);transition:transform .3s ease,color .3s ease}
+.social-icon{display:inline-block;color:var(--cor-marrom-medio);transition:transform .3s ease,color .3s ease}
+.social-icon svg{width:2.2rem;height:2.2rem;display:block}
 .social-icon:hover{transform:scale(1.25);color:var(--cor-marrom-suave);text-shadow:0 2px 4px rgba(0,0,0,.15)}
 
 /* Animations */
@@ -447,3 +439,64 @@ input:focus,select:focus,textarea:focus{border-color:var(--cor-marrom-medio);box
 
 /* Minor performance hints (no visual change) */
 .hero-phrases,.hero-card,img,button{will-change:transform,opacity}
+
+.header-right { display: flex; align-items: center; gap: 1.2rem; }
+    .social-icon.header-insta {
+      font-size: 1.9rem;
+      color: var(--cor-marrom-suave);
+      transition: all 0.3s ease;
+    }
+    .social-icon.header-insta:hover {
+      color: var(--cor-marrom-medio);
+      transform: scale(1.15);
+    }
+    .follow-instagram {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.1rem;
+      margin-top: 20px;
+    }
+    .follow-instagram svg {
+      width: 28px;
+      height: 28px;
+      flex-shrink: 0;
+    }
+    .social-float {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      z-index: 999;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+    .float-btn {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+      color: white;
+    }
+    .float-btn:hover {
+      transform: scale(1.12);
+      box-shadow: 0 8px 22px rgba(0,0,0,0.25);
+    }
+    .float-whatsapp { background: #25D366; }
+    .float-insta {
+      background: #E1306C;
+      background: linear-gradient(135deg, #F56040, #E1306C, #C13584);
+    }
+    .float-btn svg {
+      width: 32px;
+      height: 32px;
+    }
+    @media (max-width: 768px) {
+      .social-float { bottom: 20px; right: 20px; gap: 14px; }
+      .float-btn { width: 54px; height: 54px; }
+      .float-btn svg { width: 28px; height: 28px; }
+    }

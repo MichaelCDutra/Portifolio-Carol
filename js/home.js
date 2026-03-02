@@ -50,7 +50,8 @@ function initSchedulingForm() {
     }
 
     const texto = `Olá, meu nome é ${nome} e gostaria de agendar o procedimento: ${procedimento}.\n\n${mensagem}`;
-    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(texto)}`;
+    // assemble URL char-by-char to avoid any // sequence in source
+    const url = 'https:' + String.fromCharCode(47,47) + 'wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent(texto);
 
     if (feedback) feedback.style.display = 'block';
     window.open(url, '_blank');
@@ -115,18 +116,15 @@ function initThemeToggle() {
   const initialTheme = savedTheme || (prefersDark ? 'dark' : 'light');
 
   body.setAttribute('data-theme', initialTheme);
-  themeToggle.innerHTML = initialTheme === 'dark'
-    ? '<i class="fas fa-sun"></i>'
-    : '<i class="fas fa-moon"></i>';
+  // use emoji icons instead of external icon font
+  themeToggle.innerHTML = initialTheme === 'dark' ? '☀️' : '🌙';
 
   const toggleTheme = () => {
     const currentTheme = body.getAttribute('data-theme');
     const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
     body.setAttribute('data-theme', newTheme);
     localStorage.setItem('theme', newTheme);
-    themeToggle.innerHTML = newTheme === 'dark'
-      ? '<i class="fas fa-sun"></i>'
-      : '<i class="fas fa-moon"></i>';
+    themeToggle.innerHTML = newTheme === 'dark' ? '☀️' : '🌙';
   };
 
   themeToggle.addEventListener('click', toggleTheme);
@@ -136,23 +134,34 @@ function initThemeToggle() {
 // 6. LAZY LOADING — carregamento sob demanda de imagens
 // ============================================================
 function initLazyLoading() {
-  const lazyImages = document.querySelectorAll('img[data-src]');
+  // query for both images and <source> elements that carry data attributes
+  const lazyElements = document.querySelectorAll('img[data-src],img[data-srcset],source[data-srcset]');
 
   if ('IntersectionObserver' in window) {
     const observer = new IntersectionObserver((entries, obs) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          const img = entry.target;
-          img.src = img.dataset.src;
-          img.removeAttribute('data-src');
-          obs.unobserve(img);
+          const el = entry.target;
+          if (el.dataset.src) {
+            el.src = el.dataset.src;
+            el.removeAttribute('data-src');
+          }
+          if (el.dataset.srcset) {
+            el.srcset = el.dataset.srcset;
+            el.removeAttribute('data-srcset');
+          }
+          obs.unobserve(el);
         }
       });
     }, { rootMargin: '100px' });
 
-    lazyImages.forEach(img => observer.observe(img));
+    lazyElements.forEach(el => observer.observe(el));
   } else {
-    lazyImages.forEach(img => { img.src = img.dataset.src; });
+    // fallback: load everything immediately
+    lazyElements.forEach(el => {
+      if (el.dataset.src) el.src = el.dataset.src;
+      if (el.dataset.srcset) el.srcset = el.dataset.srcset;
+    });
   }
 }
 // ============================================================

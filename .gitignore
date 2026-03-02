@@ -1,0 +1,36 @@
+# Ferramentas de Desenvolvimento
+tools/
+tools/**
+
+# Relatórios de Auditoria Lighthouse
+lighthouse-report-*.html
+lighthouse-report-*.json
+
+# Documentação Interna
+TODO.md
+
+# Arquivos CSS Originais (mantém apenas minificados)
+css/home.css
+css/home.pruned.css
+
+# Arquivos JavaScript Originais (mantém apenas minificados)
+js/home.js
+
+# Dependências
+node_modules/
+*.egg-info/
+__pycache__/
+*.pyc
+.DS_Store
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Builds locais
+*.log
+.env
+.env.local

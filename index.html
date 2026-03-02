@@ -1,59 +1,47 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Carolina Queiroz | Esteticista em Belo Horizonte</title>
-
-  <!-- SEO -->
-  <meta name="description" content="Tratamentos faciais, massagens e estética avançada com atendimento personalizado em Belo Horizonte. Realce sua beleza com Carolina Queiroz." />
-  <meta name="keywords" content="esteticista Belo Horizonte, estética facial, limpeza de pele, massagem relaxante, depilação, estética corporal, Carolina Queiroz" />
+  <meta name="description"
+    content="Tratamentos faciais, massagens e estética avançada com atendimento personalizado em Belo Horizonte. Realce sua beleza com Carolina Queiroz." />
+  <meta name="keywords"
+    content="esteticista Belo Horizonte, estética facial, limpeza de pele, massagem relaxante, depilação, estética corporal, Carolina Queiroz" />
   <meta name="author" content="Michael Dutra" />
   <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#fff8f0" />
   <link rel="canonical" href="https://esteticacarolinaqueiroz.netlify.app/" />
-
-  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://esteticacarolinaqueiroz.netlify.app/" />
   <meta property="og:title" content="Carolina Queiroz | Estética e Bem-estar" />
-  <meta property="og:description" content="Beleza e cuidado com atendimento profissional em Belo Horizonte. Conheça os serviços de Carolina Queiroz." />
+  <meta property="og:description"
+    content="Beleza e cuidado com atendimento profissional em Belo Horizonte. Conheça os serviços de Carolina Queiroz." />
   <meta property="og:image" content="https://esteticacarolinaqueiroz.netlify.app/img/capa1.webp" />
-
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Carolina Queiroz | Esteticista em BH" />
   <meta name="twitter:description" content="Tratamentos personalizados em estética e bem-estar. Conheça os serviços!" />
   <meta name="twitter:image" content="https://esteticacarolinaqueiroz.netlify.app/img/capa1.webp" />
-
-  <!-- DNS Prefetch e Preconnect -->
   <link rel="dns-prefetch" href="https://fonts.googleapis.com">
   <link rel="dns-prefetch" href="https://fonts.gstatic.com">
   <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-
-  <!-- Ícone -->
+  <link rel="preconnect" href="https://wa.me">
   <link rel="icon" href="img/logo.webp" type="image/webp" />
-
-  <!-- Preload da imagem principal (LCP) -->
   <link rel="preload" as="image" href="img/capa2.webp" fetchpriority="high">
-
-  <!-- CSS principal -->
-  <link rel="preload" href="/css/home.css" as="style">
-  <link rel="stylesheet" href="/css/home.css" media="print" onload="this.media='all'">
-
-  <!-- Fontes Google -->
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print" onload="this.media='all'">
-
-  <!-- Script principal -->
-  <script src="/js/home.js" defer></script>
-
-  <noscript><link rel="stylesheet" href="/css/home.css"></noscript>
+  <link rel="preload" href="/css/home.min.css" as="style">
+  <link rel="stylesheet" href="/css/home.min.css" media="print" onload="this.media='all'">
+  <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet"
+    media="print" onload="this.media='all'">
+  <script src="/js/home.min.js?v=2" defer></script>
+  <noscript>
+    <link rel="stylesheet" href="/css/home.min.css">
+  </noscript>
 </head>
 
 <body>
@@ -69,9 +57,20 @@
           <li><a href="#agendamento">Contato</a></li>
         </ul>
       </div>
-      <button class="theme-toggle" aria-label="Alternar tema" title="Alternar entre modo claro e escuro">
-        <i class="fas fa-moon"></i>
-      </button>
+      <div class="header-right">
+        <button class="theme-toggle" aria-label="Alternar tema" title="Alternar entre modo claro e escuro">
+          <span class="icon" aria-hidden="true">🌙</span>
+        </button>
+        <a href="https://www.instagram.com/carolina_mqueiroz/" target="_blank" rel="noopener noreferrer"
+          class="social-icon header-insta" aria-label="Instagram da Carolina Queiroz">
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 2.163c3.204 0 3.584.012 4.849.07 1.366.062 2.633.334 3.608 1.31.974.976 1.247 2.243 1.309 3.608.058 1.265.069 1.645.069 4.849s-.012 3.584-.07 4.849c-.062 1.366-.335 2.633-1.31 3.608-.975.976-2.243 1.247-3.608 1.309-1.265.058-1.645.069-4.849.069s-3.584-.012-4.849-.07c-1.366-.062-2.633-.335-3.608-1.31-.976-.975-1.247-2.243-1.309-3.608C2.175 15.746 2.163 15.366 2.163 12s.012-3.584.070-4.849c.062-1.366.334-2.633 1.310-3.608.975-.976 2.243-1.247 3.608-1.309C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.015 7.052.072 5.775.129 4.678.447 3.743 1.383 2.807 2.318 2.489 3.415 2.432 4.692 2.375 5.972 2.360 6.381 2.360 12s.015 6.028.072 7.308c.057 1.277.375 2.374 1.311 3.31.936.936 2.033 1.254 3.310 1.311 1.280.057 1.689.072 7.308.072s6.028-.015 7.308-.072c1.277-.057 2.374-.375 3.31-1.311.936-.936 1.254-2.033 1.311-3.31.057-1.280.072-1.689.072-7.308s-.015-6.028-.072-7.308c-.057-1.277-.375-2.374-1.311-3.310-.936-.936-2.033-1.254-3.310-1.311C15.668.015 15.259 0 12 0z" />
+            <path
+              d="M12 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.162a3.999 3.999 0 110-7.998 3.999 3.999 0 010 7.998zm6.406-11.845a1.44 1.44 0 11-2.880 0 1.44 1.44 0 012.880 0z" />
+          </svg>
+        </a>
+      </div>
     </nav>
   </header>
 
@@ -87,15 +86,24 @@
 
       <div class="hero-gallery" aria-label="Galeria de fotos do Hero">
         <article class="hero-card" tabindex="0" role="button" aria-label="Conheça os serviços">
-          <img src="img/capa2.webp" alt="Cliente recebendo tratamento facial com máscara de argila em Belo Horizonte." width="600" height="400" decoding="async" fetchpriority="high">
+          <picture>
+            <source srcset="img/capa2-400.webp 400w, img/capa2.webp 525w" sizes="(max-width:600px) 100vw, 600px"
+              type="image/webp">
+            <img src="img/capa2.webp" alt="Cliente recebendo tratamento facial com máscara de argila em Belo Horizonte."
+              width="600" height="400" decoding="async" fetchpriority="high">
+          </picture>
           <a href="#servicos" class="card-button">Conheça os serviços</a>
         </article>
         <article class="hero-card" tabindex="0" role="button" aria-label="Agendar no WhatsApp">
-          <img src="img/capa1.webp" alt="Ambiente de massagem relaxante com maca e iluminação suave." width="600" height="400" loading="lazy" decoding="async">
-          <a href="https://wa.me/5531997459813" class="card-button" target="_blank" rel="noopener noreferrer">Agendar no WhatsApp</a>
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAUEBA==" data-src="img/capa1.webp"
+            alt="Ambiente de massagem relaxante com maca e iluminação suave." width="600" height="400" decoding="async">
+          <a href="https://wa.me/5531997459813" class="card-button" target="_blank" rel="noopener noreferrer">Agendar no
+            WhatsApp</a>
         </article>
         <article class="hero-card" tabindex="0" role="button" aria-label="Sobre Carolina Queiroz">
-          <img src="img/carolina.webp" alt="Retrato profissional da esteticista Carolina Queiroz, especialista em estética facial." width="600" height="400" loading="lazy" decoding="async">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAUEBA==" data-src="img/carolina.webp"
+            alt="Retrato profissional da esteticista Carolina Queiroz, especialista em estética facial." width="600"
+            height="400" decoding="async">
           <a href="#sobre" class="card-button">Sobre mim</a>
         </article>
       </div>
@@ -108,12 +116,15 @@
     <section id="sobre" aria-label="Seção sobre Carolina">
       <div class="sobre-container">
         <div class="sobre-img">
-          <img src="img/carolinaqueiroz-sobre.webp" alt="Carolina Queiroz, esteticista especializada em cuidados faciais e bem-estar em Belo Horizonte." width="500" height="500" loading="lazy" decoding="async">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAUEBA==" data-src="img/carolinaqueiroz-sobre.webp"
+            alt="Carolina Queiroz, esteticista especializada em cuidados faciais e bem-estar em Belo Horizonte."
+            width="500" height="500" decoding="async">
         </div>
         <div class="sobre-texto">
           <h2>Sobre Carolina</h2>
           <h3>Sua saúde e beleza em primeiro lugar.</h3>
-          <p>Sou esteticista e atuo com uma abordagem focada no bem-estar e na prevenção. Com experiência em tratamentos faciais e massagens, crio protocolos exclusivos, pensados para as necessidades de cada cliente.</p>
+          <p>Sou esteticista e atuo com uma abordagem focada no bem-estar e na prevenção. Com experiência em tratamentos
+            faciais e massagens, crio protocolos exclusivos, pensados para as necessidades de cada cliente.</p>
           <button id="btn-historia" class="btn-principal">Conheça Minha História</button>
         </div>
       </div>
@@ -122,12 +133,50 @@
     <section id="servicos" aria-label="Seção de serviços oferecidos">
       <h2>Meus Serviços</h2>
       <div class="servicos-container">
-        <article class="servico"><img src="img/limpeza-pele.webp" alt="Cliente recebendo procedimento profissional de limpeza de pele em Belo Horizonte." width="400" height="300" loading="lazy" decoding="async"><h3>Limpeza de Pele</h3><p class="resumo">Remove impurezas, células mortas e controla a oleosidade, deixando a pele saudável e revitalizada.</p></article>
-        <article class="servico"><img src="img/mass-relaxante.webp" alt="Cliente relaxando durante sessão de massagem relaxante profissional com óleos." width="400" height="300" loading="lazy" decoding="async"><h3>Massagem Relaxante</h3><p class="resumo">Técnica que alivia o estresse e as tensões musculares com movimentos suaves e contínuos.</p></article>
-        <article class="servico"><img src="img/mass-terapeutica.webp" alt="Massoterapeuta aplicando técnica terapêutica nas costas da cliente." width="400" height="300" loading="lazy" decoding="async"><h3>Massagem Terapêutica</h3><p class="resumo">Atua no alívio de dores e tensões profundas, combinando técnicas manuais com foco terapêutico.</p></article>
-        <article class="servico"><img src="img/dep-laser.webp" alt="Aplicação de depilação a laser profissional na perna de cliente." width="400" height="300" loading="lazy" decoding="async"><h3>Depilação a Laser</h3><p class="resumo">Tecnologia eficaz para redução permanente dos pelos, proporcionando conforto e praticidade.</p></article>
-        <article class="servico"><img src="img/dep-cera.webp" alt="Profissional aplicando cera morna para depilação feminina em Belo Horizonte." width="400" height="300" loading="lazy" decoding="async"><h3>Depilação a Cera</h3><p class="resumo">Método tradicional que remove os pelos desde a raiz, deixando a pele lisa e macia por mais tempo.</p></article>
-        <article class="servico"><img src="img/injetavel.webp" alt="Profissional de estética aplicando tratamento injetável facial em paciente em clínica especializada em Belo Horizonte." width="400" height="300" loading="lazy" decoding="async"><h3>Injetável</h3><p class="resumo">Tratamentos que utilizam ativos aplicados diretamente na pele para resultados rápidos e eficazes.</p></article>
+        <article class="servico"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAUEBA=="
+            data-src="img/limpeza-pele.webp"
+            alt="Cliente recebendo procedimento profissional de limpeza de pele em Belo Horizonte." width="400"
+            height="300" decoding="async">
+          <h3>Limpeza de Pele</h3>
+          <p class="resumo">Remove impurezas, células mortas e controla a oleosidade, deixando a pele saudável e
+            revitalizada.</p>
+        </article>
+        <article class="servico"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAUEBA=="
+            data-src="img/mass-relaxante.webp"
+            alt="Cliente relaxando durante sessão de massagem relaxante profissional com óleos." width="400"
+            height="300" decoding="async">
+          <h3>Massagem Relaxante</h3>
+          <p class="resumo">Técnica que alivia o estresse e as tensões musculares com movimentos suaves e contínuos.</p>
+        </article>
+        <article class="servico"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAUEBA=="
+            data-src="img/mass-terapeutica.webp"
+            alt="Massoterapeuta aplicando técnica terapêutica nas costas da cliente." width="400" height="300"
+            decoding="async">
+          <h3>Massagem Terapêutica</h3>
+          <p class="resumo">Atua no alívio de dores e tensões profundas, combinando técnicas manuais com foco
+            terapêutico.</p>
+        </article>
+        <article class="servico"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAUEBA==" data-src="img/dep-laser.webp"
+            alt="Aplicação de depilação a laser profissional na perna de cliente." width="400" height="300"
+            decoding="async">
+          <h3>Depilação a Laser</h3>
+          <p class="resumo">Tecnologia eficaz para redução permanente dos pelos, proporcionando conforto e praticidade.
+          </p>
+        </article>
+        <article class="servico"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAUEBA==" data-src="img/dep-cera.webp"
+            alt="Profissional aplicando cera morna para depilação feminina em Belo Horizonte." width="400" height="300"
+            decoding="async">
+          <h3>Depilação a Cera</h3>
+          <p class="resumo">Método tradicional que remove os pelos desde a raiz, deixando a pele lisa e macia por mais
+            tempo.</p>
+        </article>
+        <article class="servico"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAUEBA==" data-src="img/injetavel.webp"
+            alt="Profissional de estética aplicando tratamento injetável facial em paciente em clínica especializada em Belo Horizonte."
+            width="400" height="300" decoding="async">
+          <h3>Injetável</h3>
+          <p class="resumo">Tratamentos que utilizam ativos aplicados diretamente na pele para resultados rápidos e
+            eficazes.</p>
+        </article>
       </div>
     </section>
 
@@ -140,16 +189,52 @@
         <div class="cont-info">
           <div class="cont-header">
             <h2>Vamos conversar</h2>
-            <p>Quer saber qual tratamento é ideal para você? Fale conosco — estamos aqui para te orientar com carinho e profissionalismo.</p>
+            <p>Quer saber qual tratamento é ideal para você? Fale conosco — estamos aqui para te orientar com carinho e
+              profissionalismo.</p>
           </div>
           <div class="cont-list">
-            <div class="cont-item"><i class="fas fa-envelope"></i><div class="cont-text"><h4>Email</h4><p><a href="mailto:carolinamiguelqueiroz@gmail.com">carolinamiguelqueiroz@gmail.com</a></p></div></div>
-            <div class="cont-item"><i class="fas fa-phone-alt"></i><div class="cont-text"><h4>Telefone</h4><p><a href="tel:+5531997459813">(31) 9 9745-9813</a></p></div></div>
-            <div class="cont-item"><i class="fas fa-map-marker-alt"></i><div class="cont-text"><h4>Localização</h4><p>Belo Horizonte - MG</p></div></div>
+            <div class="cont-item"><span class="icon" aria-hidden="true">✉️</span>
+              <div class="cont-text">
+                <h4>Email</h4>
+                <p><a href="mailto:carolinamiguelqueiroz@gmail.com">carolinamiguelqueiroz@gmail.com</a></p>
+              </div>
+            </div>
+            <div class="cont-item"><span class="icon" aria-hidden="true">📞</span>
+              <div class="cont-text">
+                <h4>Telefone</h4>
+                <p><a href="tel:+5531997459813">(31) 9 9745-9813</a></p>
+              </div>
+            </div>
+            <div class="cont-item"><span class="icon" aria-hidden="true">📍</span>
+              <div class="cont-text">
+                <h4>Localização</h4>
+                <p>Belo Horizonte - MG</p>
+              </div>
+            </div>
           </div>
           <div class="social-icons">
-            <a href="https://www.instagram.com/carolina_mqueiroz/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
-            <a href="https://wa.me/5531997459813" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+            <p class="follow-instagram">
+              Siga-me nas Redes Sociais:
+            </p>
+          </div>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/carolina_mqueiroz/" target="_blank" class="social-icon"
+              aria-label="Instagram">
+              <svg class="icon instagram" aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.849.07 1.366.062 2.633.334 3.608 1.31.974.976 1.247 2.243 1.309 3.608.058 1.265.069 1.645.069 4.849s-.012 3.584-.07 4.849c-.062 1.366-.335 2.633-1.31 3.608-.975.976-2.243 1.247-3.608 1.309-1.265.058-1.645.069-4.849.069s-3.584-.012-4.849-.07c-1.366-.062-2.633-.335-3.608-1.31-.976-.975-1.247-2.243-1.309-3.608C2.175 15.746 2.163 15.366 2.163 12s.012-3.584.07-4.849c.062-1.366.334-2.633 1.31-3.608.975-.976 2.243-1.247 3.608-1.309C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.015 7.052.072 5.775.129 4.678.447 3.743 1.383 2.807 2.318 2.489 3.415 2.432 4.692 2.375 5.972 2.36 6.381 2.36 12s.015 6.028.072 7.308c.057 1.277.375 2.374 1.311 3.31.936.936 2.033 1.254 3.310 1.311 1.28.057 1.689.072 7.308.072s6.028-.015 7.308-.072c1.277-.057 2.374-.375 3.31-1.311.936-.936 1.254-2.033 1.311-3.31.057-1.28.072-1.689.072-7.308s-.015-6.028-.072-7.308c-.057-1.277-.375-2.374-1.311-3.31-.936-.936-2.033-1.254-3.31-1.311C15.668.015 15.259 0 12 0z" />
+                <path
+                  d="M12 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.162a3.999 3.999 0 110-7.998 3.999 3.999 0 010 7.998zm6.406-11.845a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z" />
+              </svg>
+            </a>
+            <a href="https://wa.me/5531997459813" target="_blank" class="social-icon" aria-label="WhatsApp">
+              <svg class="icon whatsapp" aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor">
+                <path
+                  d="M20.52 3.48A11.9 11.9 0 0012 .02 11.94 11.94 0 003.47 3.48 11.97 11.97 0 00.02 12c0 2.18.57 4.32 1.65 6.21L0 24l6.04-1.56A11.93 11.93 0 0012 24c2.18 0 4.32-.57 6.21-1.65A11.97 11.97 0 0024 12a11.9 11.9 0 00-3.48-8.52zm-8.52 17.52c-1.85 0-3.66-.5-5.24-1.42l-.37-.22-3.58.93.96-3.49-.24-.37A8.956 8.956 0 013.02 12c0-4.96 4.02-9 9-9s9 4.04 9 9-4.02 9-9 9zm5.3-6.93c-.29-.14-1.71-.84-1.98-.93-.27-.1-.47-.14-.67.14-.20.28-.77.93-.94 1.12-.17.20-.35.22-.65.08-1.76-.88-2.92-1.56-4.10-3.53-.31-.53.31-.49.90-1.63.10-.18.05-.34-.02-.47-.07-.14-.67-1.62-.92-2.22-.24-.58-.49-.50-.67-.51-.17 0-.37 0-.57 0-.20 0-.52.07-.80.37-.27.30-1.04 1.02-1.04 2.48s1.06 2.87 1.21 3.07c.15.20 2.10 3.20 5.09 4.49.71.31 1.26.50 1.69.64.71.22 1.35.19 1.86.12.57-.08 1.71-.70 1.95-1.38.24-.68.24-1.26.17-1.38-.07-.12-.27-.20-.57-.34z" />
+              </svg>
+            </a>
           </div>
         </div>
 
@@ -171,10 +256,18 @@
             <label for="mensagem">Mensagem</label>
             <textarea id="mensagem" rows="4" placeholder="Escreva uma mensagem..."></textarea>
             <div class="form-buttons">
-              <button type="submit" class="whatsapp-button"><i class="fab fa-whatsapp"></i> Agendar via WhatsApp</button>
+              <button type="submit" class="whatsapp-button">
+                <svg class="icon whatsapp" aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor">
+                  <path
+                    d="M20.52 3.48A11.9 11.9 0 0012 .02 11.94 11.94 0 003.47 3.48 11.97 11.97 0 00.02 12c0 2.18.57 4.32 1.65 6.21L0 24l6.04-1.56A11.93 11.93 0 0012 24c2.18 0 4.32-.57 6.21-1.65A11.97 11.97 0 0024 12a11.9 11.9 0 00-3.48-8.52zm-8.52 17.52c-1.85 0-3.66-.5-5.24-1.42l-.37-.22-3.58.93.96-3.49-.24-.37A8.956 8.956 0 013.02 12c0-4.96 4.02-9 9-9s9 4.04 9 9-4.02 9-9 9zm5.3-6.93c-.29-.14-1.71-.84-1.98-.93-.27-.1-.47-.14-.67.14-.20.28-.77.93-.94 1.12-.17.20-.35.22-.65.08-1.76-.88-2.92-1.56-4.10-3.53-.31-.53.31-.49.90-1.63.10-.18.05-.34-.02-.47-.07-.14-.67-1.62-.92-2.22-.24-.58-.49-.50-.67-.51-.17 0-.37 0-.57 0-.20 0-.52.07-.80.37-.27.30-1.04 1.02-1.04 2.48s1.06 2.87 1.21 3.07c.15.20 2.10 3.20 5.09 4.49.71.31 1.26.50 1.69.64.71.22 1.35.19 1.86.12.57-.08 1.71-.70 1.95-1.38.24-.68.24-1.26.17-1.38-.07-.12-.27-.20-.57-.34z" />
+                </svg>
+                Agendar via WhatsApp
+              </button>
               <button type="reset" class="clear-button">Limpar</button>
             </div>
-            <p id="form-feedback" style="display:none; color:green; margin-top:10px;">Mensagem pronta para envio no WhatsApp!</p>
+            <p id="form-feedback" style="display:none; color:green; margin-top:10px;">Mensagem pronta para envio no
+              WhatsApp!</p>
           </form>
         </div>
       </div>
@@ -182,18 +275,42 @@
 
     <div id="modal-historia" class="modal-overlay">
       <div class="modal-content">
-        <button class="modal-close" aria-label="Fechar modal">&times;</button>
+        <button class="modal-close" aria-label="Fechar modal">×</button>
         <h2>Minha História</h2>
-        <p>Antes de me dedicar à estética, atuei na enfermagem — e ali percebi como o cuidado e o toque humano podem transformar vidas...</p>
-        <p>Hoje, levo essa essência para cada tratamento. Meu trabalho é unir beleza e bem-estar com segurança, carinho e resultados reais.</p>
+        <p>Antes de me dedicar à estética, atuei na enfermagem — e ali percebi como o cuidado e o toque humano podem
+          transformar vidas...</p>
+        <p>Hoje, levo essa essência para cada tratamento. Meu trabalho é unir beleza e bem-estar com segurança, carinho
+          e resultados reais.</p>
       </div>
     </div>
   </main>
 
+  <!-- Botões flutuantes -->
+  <div class="social-float">
+    <a href="https://wa.me/5531997459813" target="_blank" rel="noopener noreferrer" class="float-btn float-whatsapp"
+      aria-label="Falar no WhatsApp">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path
+          d="M20.52 3.48A11.9 11.9 0 0012 .02 11.94 11.94 0 003.47 3.48 11.97 11.97 0 00.02 12c0 2.18.57 4.32 1.65 6.21L0 24l6.04-1.56A11.93 11.93 0 0012 24c2.18 0 4.32-.57 6.21-1.65A11.97 11.97 0 0024 12a11.9 11.9 0 00-3.48-8.52zm-8.52 17.52c-1.85 0-3.66-.5-5.24-1.42l-.37-.22-3.58.93.96-3.49-.24-.37A8.956 8.956 0 013.02 12c0-4.96 4.02-9 9-9s9 4.04 9 9-4.02 9-9 9zm5.3-6.93c-.29-.14-1.71-.84-1.98-.93-.27-.1-.47-.14-.67.14-.20.28-.77.93-.94 1.12-.17.20-.35.22-.65.08-1.76-.88-2.92-1.56-4.10-3.53-.31-.53.31-.49.90-1.63.10-.18.05-.34-.02-.47-.07-.14-.67-1.62-.92-2.22-.24-.58-.49-.50-.67-.51-.17 0-.37 0-.57 0-.20 0-.52.07-.80.37-.27.30-1.04 1.02-1.04 2.48s1.06 2.87 1.21 3.07c.15.20 2.10 3.20 5.09 4.49.71.31 1.26.50 1.69.64.71.22 1.35.19 1.86.12.57-.08 1.71-.70 1.95-1.38.24-.68.24-1.26.17-1.38-.07-.12-.27-.20-.57-.34z" />
+      </svg>
+    </a>
+    <a href="https://www.instagram.com/carolina_mqueiroz/" target="_blank" rel="noopener noreferrer"
+      class="float-btn float-insta" aria-label="Instagram @carolina_mqueiroz">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path
+          d="M12 2.163c3.204 0 3.584.012 4.849.07 1.366.062 2.633.334 3.608 1.31.974.976 1.247 2.243 1.309 3.608.058 1.265.069 1.645.069 4.849s-.012 3.584-.07 4.849c-.062 1.366-.335 2.633-1.31 3.608-.975.976-2.243 1.247-3.608 1.309-1.265.058-1.645.069-4.849.069s-3.584-.012-4.849-.07c-1.366-.062-2.633-.335-3.608-1.31-.976-.975-1.247-2.243-1.309-3.608C2.175 15.746 2.163 15.366 2.163 12s.012-3.584.07-4.849c.062-1.366.334-2.633 1.310-3.608.975-.976 2.243-1.247 3.608-1.309C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.015 7.052.072 5.775.129 4.678.447 3.743 1.383 2.807 2.318 2.489 3.415 2.432 4.692 2.375 5.972 2.36 6.381 2.36 12s.015 6.028.072 7.308c.057 1.277.375 2.374 1.311 3.31.936.936 2.033 1.254 3.310 1.311 1.28.057 1.689.072 7.308.072s6.028-.015 7.308-.072c1.277-.057 2.374-.375 3.31-1.311.936-.936 1.254-2.033 1.311-3.31.057-1.28.072-1.689.072-7.308s-.015-6.028-.072-7.308c-.057-1.277-.375-2.374-1.311-3.31-.936-.936-2.033-1.254-3.31-1.311C15.668.015 15.259 0 12 0z" />
+        <path
+          d="M12 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.162a3.999 3.999 0 110-7.998 3.999 3.999 0 010 7.998zm6.406-11.845a1.44 1.44 0 11-2.880 0 1.44 1.44 0 012.880 0z" />
+      </svg>
+    </a>
+  </div>
+
   <footer class="site-footer">
     <div class="footer-container">
       <div class="footer-col">
-        <img src="img/logo.webp" alt="Logotipo da Esteticista Carolina Queiroz em Belo Horizonte." width="120" height="120" class="footer-logo" loading="lazy" decoding="async">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAUEBA==" data-src="img/logo.webp"
+          alt="Logotipo da Esteticista Carolina Queiroz em Belo Horizonte." width="120" height="120" class="footer-logo"
+          decoding="async">
         <p class="footer-slogan">Realçando sua beleza, com carinho e dedicação.</p>
       </div>
       <div class="footer-col">
@@ -213,15 +330,31 @@
       <div class="footer-col">
         <h4>Redes Sociais</h4>
         <div class="social-icons">
-          <a href="https://www.instagram.com/carolina_mqueiroz/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
-          <a href="https://wa.me/5531997459813" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://www.instagram.com/carolina_mqueiroz/" target="_blank" class="social-icon"
+            aria-label="Instagram">
+            <svg class="icon instagram" aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.849.07 1.366.062 2.633.334 3.608 1.31.974.976 1.247 2.243 1.309 3.608.058 1.265.069 1.645.069 4.849s-.012 3.584-.07 4.849c-.062 1.366-.335 2.633-1.31 3.608-.975.976-2.243 1.247-3.608 1.309-1.265.058-1.645.069-4.849.069s-3.584-.012-4.849-.07c-1.366-.062-2.633-.335-3.608-1.31-.976-.975-1.247-2.243-1.309-3.608C2.175 15.746 2.163 15.366 2.163 12s.012-3.584.07-4.849c.062-1.366.334-2.633 1.31-3.608.975-.976 2.243-1.247 3.608-1.309C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.015 7.052.072 5.775.129 4.678.447 3.743 1.383 2.807 2.318 2.489 3.415 2.432 4.692 2.375 5.972 2.36 6.381 2.36 12s.015 6.028.072 7.308c.057 1.277.375 2.374 1.311 3.31.936.936 2.033 1.254 3.310 1.311 1.28.057 1.689.072 7.308.072s6.028-.015 7.308-.072c1.277-.057 2.374-.375 3.31-1.311.936-.936 1.254-2.033 1.311-3.31.057-1.28.072-1.689.072-7.308s-.015-6.028-.072-7.308c-.057-1.277-.375-2.374-1.311-3.31-.936-.936-2.033-1.254-3.31-1.311C15.668.015 15.259 0 12 0z" />
+              <path
+                d="M12 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.162a3.999 3.999 0 110-7.998 3.999 3.999 0 010 7.998zm6.406-11.845a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z" />
+            </svg>
+          </a>
+          <a href="https://wa.me/5531997459813" target="_blank" class="social-icon" aria-label="WhatsApp">
+            <svg class="icon whatsapp" aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor">
+              <path
+                d="M20.52 3.48A11.9 11.9 0 0012 .02 11.94 11.94 0 003.47 3.48 11.97 11.97 0 00.02 12c0 2.18.57 4.32 1.65 6.21L0 24l6.04-1.56A11.93 11.93 0 0012 24c2.18 0 4.32-.57 6.21-1.65A11.97 11.97 0 0024 12a11.9 11.9 0 00-3.48-8.52zm-8.52 17.52c-1.85 0-3.66-.5-5.24-1.42l-.37-.22-3.58.93.96-3.49-.24-.37A8.956 8.956 0 013.02 12c0-4.96 4.02-9 9-9s9 4.04 9 9-4.02 9-9 9zm5.3-6.93c-.29-.14-1.71-.84-1.98-.93-.27-.1-.47-.14-.67.14-.20.28-.77.93-.94 1.12-.17.20-.35.22-.65.08-1.76-.88-2.92-1.56-4.10-3.53-.31-.53.31-.49.90-1.63.10-.18.05-.34-.02-.47-.07-.14-.67-1.62-.92-2.22-.24-.58-.49-.50-.67-.51-.17 0-.37 0-.57 0-.20 0-.52.07-.80.37-.27.30-1.04 1.02-1.04 2.48s1.06 2.87 1.21 3.07c.15.20 2.10 3.20 5.09 4.49.71.31 1.26.50 1.69.64.71.22 1.35.19 1.86.12.57-.08 1.71-.70 1.95-1.38.24-.68.24-1.26.17-1.38-.07-.12-.27-.20-.57-.34z" />
+            </svg>
+          </a>
         </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2025 Estética Carol. Todos os direitos reservados.</p>
+      <p>© 2025 Estética Carol. Todos os direitos reservados.</p>
       <p>Desenvolvido por <strong>Michael Dutra</strong> 💻</p>
     </div>
   </footer>
 </body>
+
 </html>
