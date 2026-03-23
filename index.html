@@ -1,361 +1,633 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Carolina Queiroz | Esteticista em Belo Horizonte</title>
-  <meta name="description"
-    content="Tratamentos faciais, massagens e estética avançada com atendimento personalizado em Belo Horizonte. Realce sua beleza com Carolina Queiroz." />
-  <meta name="keywords"
-    content="esteticista Belo Horizonte, estética facial, limpeza de pele, massagem relaxante, depilação, estética corporal, Carolina Queiroz" />
-  <meta name="author" content="Michael Dutra" />
-  <meta name="robots" content="index, follow" />
-  <meta name="theme-color" content="#fff8f0" />
-  <link rel="canonical" href="https://esteticacarolinaqueiroz.netlify.app/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://esteticacarolinaqueiroz.netlify.app/" />
-  <meta property="og:title" content="Carolina Queiroz | Estética e Bem-estar" />
-  <meta property="og:description"
-    content="Beleza e cuidado com atendimento profissional em Belo Horizonte. Conheça os serviços de Carolina Queiroz." />
-  <meta property="og:image" content="https://esteticacarolinaqueiroz.netlify.app/img/capa1.webp" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Carolina Queiroz | Esteticista em BH" />
-  <meta name="twitter:description" content="Tratamentos personalizados em estética e bem-estar. Conheça os serviços!" />
-  <meta name="twitter:image" content="https://esteticacarolinaqueiroz.netlify.app/img/capa1.webp" />
-  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
-  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-  <link rel="preconnect" href="https://wa.me">
-  <link rel="icon" href="img/logo.webp" type="image/webp" />
-  <link rel="preload" as="image" href="img/capa2.webp" fetchpriority="high">
-  <link rel="preload" href="/css/home.min.css" as="style">
-  <link rel="stylesheet" href="/css/home.min.css" media="print" onload="this.media='all'">
-  <link rel="preload" as="style"
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Open+Sans:wght@400;600&family=Poppins:wght@400;600&display=swap">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Open+Sans:wght@400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet"
-    media="print" onload="this.media='all'">
-  <link rel="preload" as="font" href="https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgEM86xQ.woff2" crossorigin>
-  <link rel="preload" as="font" href="https://fonts.gstatic.com/s/poppins/v24/pxiEyp8kv8JHgFVrJJfecnFHGPc.woff2" crossorigin>
-  <link rel="preload" as="font" href="https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLEj6Z1xlFd2JQEk.woff2" crossorigin>
-  <script src="/js/home.min.js?v=2" defer></script>
-  <noscript>
-    <link rel="stylesheet" href="/css/home.min.css">
-  </noscript>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carolina Queiroz | Estética Avançada em Belo Horizonte e região metropolitana</title>
+    <meta name="description" content="Resultados reais, sem dor e no conforto da sua casa ou no meu novo espaço fixo em Belo Horizonte. Esteticista com formação em enfermagem Belo Horizonte, tecnólogo em estética Belo Horizonte, biomedicina estética em formação. Agende sua avaliação grátis." />
+    <meta name="theme-color" content="#FCFAF8" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/home.css">
+    <script src="js/home.js"></script>
 </head>
-
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="logo"><a href="#">Carolina Queiroz</a></div>
-      <button class="hamburger" aria-label="Abrir menu"><span></span><span></span><span></span></button>
-      <div class="menu-wrapper">
-        <ul class="menu">
-          <li><a href="#">Início</a></li>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#agendamento">Contato</a></li>
-        </ul>
-      </div>
-      <div class="header-right">
-        <button class="theme-toggle" aria-label="Alternar tema" title="Alternar entre modo claro e escuro">
-          <span class="icon" aria-hidden="true">🌙</span>
-        </button>
-        <a href="https://www.instagram.com/carolina_mqueiroz/" target="_blank" rel="noopener noreferrer"
-          class="social-icon header-insta" aria-label="Instagram da Carolina Queiroz">
-          <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
-            <path
-              d="M12 2.163c3.204 0 3.584.012 4.849.07 1.366.062 2.633.334 3.608 1.31.974.976 1.247 2.243 1.309 3.608.058 1.265.069 1.645.069 4.849s-.012 3.584-.07 4.849c-.062 1.366-.335 2.633-1.31 3.608-.975.976-2.243 1.247-3.608 1.309-1.265.058-1.645.069-4.849.069s-3.584-.012-4.849-.07c-1.366-.062-2.633-.335-3.608-1.31-.976-.975-1.247-2.243-1.309-3.608C2.175 15.746 2.163 15.366 2.163 12s.012-3.584.070-4.849c.062-1.366.334-2.633 1.310-3.608.975-.976 2.243-1.247 3.608-1.309C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.015 7.052.072 5.775.129 4.678.447 3.743 1.383 2.807 2.318 2.489 3.415 2.432 4.692 2.375 5.972 2.360 6.381 2.360 12s.015 6.028.072 7.308c.057 1.277.375 2.374 1.311 3.31.936.936 2.033 1.254 3.310 1.311 1.280.057 1.689.072 7.308.072s6.028-.015 7.308-.072c1.277-.057 2.374-.375 3.31-1.311.936-.936 1.254-2.033 1.311-3.31.057-1.280.072-1.689.072-7.308s-.015-6.028-.072-7.308c-.057-1.277-.375-2.374-1.311-3.310-.936-.936-2.033-1.254-3.310-1.311C15.668.015 15.259 0 12 0z" />
-            <path
-              d="M12 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.162a3.999 3.999 0 110-7.998 3.999 3.999 0 010 7.998zm6.406-11.845a1.44 1.44 0 11-2.880 0 1.44 1.44 0 012.880 0z" />
-          </svg>
-        </a>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <section class="hero" id="hero" aria-label="Seção principal - Hero">
-      <article class="hero-content">
-        <div class="hero-phrases" aria-live="polite" aria-atomic="true">
-          <p class="phrase active">Realce sua beleza natural com cuidado exclusivo.</p>
-          <p class="phrase">Atendimento personalizado no conforto da sua casa.</p>
-          <p class="phrase">Sua autoestima merece o melhor tratamento.</p>
-        </div>
-      </article>
-
-      <div class="hero-gallery" aria-label="Galeria de fotos do Hero">
-        <article class="hero-card" tabindex="0" role="button" aria-label="Conheça os serviços">
-          <picture>
-            <source srcset="img/capa2-400.webp 400w, img/capa2.webp 525w" sizes="(max-width:600px) 100vw, 600px"
-              type="image/webp">
-            <img src="img/capa2.webp" alt="Cliente recebendo tratamento facial com máscara de argila em Belo Horizonte."
-              width="600" height="400" decoding="async" fetchpriority="high">
-          </picture>
-          <a href="#servicos" class="card-button">Conheça os serviços</a>
-        </article>
-        <article class="hero-card" tabindex="0" role="button" aria-label="Agendar no WhatsApp">
-          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAUEBA==" data-src="img/capa1.webp"
-            alt="Ambiente de massagem relaxante com maca e iluminação suave." width="600" height="400" decoding="async">
-          <a href="https://wa.me/5531997459813" class="card-button" target="_blank" rel="noopener noreferrer">Agendar no
-            WhatsApp</a>
-        </article>
-        <article class="hero-card" tabindex="0" role="button" aria-label="Sobre Carolina Queiroz">
-          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAUEBA==" data-src="img/carolina.webp"
-            alt="Retrato profissional da esteticista Carolina Queiroz, especialista em estética facial." width="600"
-            height="400" decoding="async">
-          <a href="#sobre" class="card-button">Sobre mim</a>
-        </article>
-      </div>
-    </section>
-
-    <section class="transicao" id="transicao">
-      <h1>Aqui, cada cliente é única — e cada cuidado, especial.</h1>
-    </section>
-
-    <section id="sobre" aria-label="Seção sobre Carolina">
-      <div class="sobre-container">
-        <div class="sobre-img">
-          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAUEBA==" data-src="img/carolinaqueiroz-sobre.webp"
-            alt="Carolina Queiroz, esteticista especializada em cuidados faciais e bem-estar em Belo Horizonte."
-            width="500" height="500" decoding="async">
-        </div>
-        <div class="sobre-texto">
-          <h2>Sobre Carolina</h2>
-          <h3>Sua saúde e beleza em primeiro lugar.</h3>
-          <p>Sou esteticista e atuo com uma abordagem focada no bem-estar e na prevenção. Com experiência em tratamentos
-            faciais e massagens, crio protocolos exclusivos, pensados para as necessidades de cada cliente.</p>
-          <button id="btn-historia" class="btn-principal">Conheça Minha História</button>
-        </div>
-      </div>
-    </section>
-
-    <section id="servicos" aria-label="Seção de serviços oferecidos">
-      <h2>Meus Serviços</h2>
-      <div class="servicos-container">
-        <article class="servico"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAUEBA=="
-            data-src="img/limpeza-pele.webp"
-            alt="Cliente recebendo procedimento profissional de limpeza de pele em Belo Horizonte." width="400"
-            height="300" decoding="async">
-          <h3>Limpeza de Pele</h3>
-          <p class="resumo">Remove impurezas, células mortas e controla a oleosidade, deixando a pele saudável e
-            revitalizada.</p>
-        </article>
-        <article class="servico"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAUEBA=="
-            data-src="img/mass-relaxante.webp"
-            alt="Cliente relaxando durante sessão de massagem relaxante profissional com óleos." width="400"
-            height="300" decoding="async">
-          <h3>Massagem Relaxante</h3>
-          <p class="resumo">Técnica que alivia o estresse e as tensões musculares com movimentos suaves e contínuos.</p>
-        </article>
-        <article class="servico"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAUEBA=="
-            data-src="img/mass-terapeutica.webp"
-            alt="Massoterapeuta aplicando técnica terapêutica nas costas da cliente." width="400" height="300"
-            decoding="async">
-          <h3>Massagem Terapêutica</h3>
-          <p class="resumo">Atua no alívio de dores e tensões profundas, combinando técnicas manuais com foco
-            terapêutico.</p>
-        </article>
-        <article class="servico"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAUEBA==" data-src="img/dep-laser.webp"
-            alt="Aplicação de depilação a laser profissional na perna de cliente." width="400" height="300"
-            decoding="async">
-          <h3>Depilação a Laser</h3>
-          <p class="resumo">Tecnologia eficaz para redução permanente dos pelos, proporcionando conforto e praticidade.
-          </p>
-        </article>
-        <article class="servico"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAUEBA==" data-src="img/dep-cera.webp"
-            alt="Profissional aplicando cera morna para depilação feminina em Belo Horizonte." width="400" height="300"
-            decoding="async">
-          <h3>Depilação a Cera</h3>
-          <p class="resumo">Método tradicional que remove os pelos desde a raiz, deixando a pele lisa e macia por mais
-            tempo.</p>
-        </article>
-        <article class="servico"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAUEBA==" data-src="img/injetavel.webp"
-            alt="Profissional de estética aplicando tratamento injetável facial em paciente em clínica especializada em Belo Horizonte."
-            width="400" height="300" decoding="async">
-          <h3>Injetável</h3>
-          <p class="resumo">Tratamentos que utilizam ativos aplicados diretamente na pele para resultados rápidos e
-            eficazes.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="agendamento" id="agendamento">
-      <div class="agendamento-header">
-        <h1>Entre em Contato</h1>
-        <p>Estamos à disposição para ajudar e responder suas dúvidas</p>
-      </div>
-      <div class="cont-grid">
-        <div class="cont-info">
-          <div class="cont-header">
-            <h2>Vamos conversar</h2>
-            <p>Quer saber qual tratamento é ideal para você? Fale conosco — estamos aqui para te orientar com carinho e
-              profissionalismo.</p>
-          </div>
-          <div class="cont-list">
-            <div class="cont-item"><span class="icon" aria-hidden="true">✉️</span>
-              <div class="cont-text">
-                <h4>Email</h4>
-                <p><a href="mailto:carolinamiguelqueiroz@gmail.com">carolinamiguelqueiroz@gmail.com</a></p>
-              </div>
+    <!-- NAVBAR -->
+    <header id="header">
+        <div class="container navbar">
+            <div class="logo"><a href="#inicio">Carolina Queiroz</a></div>
+            
+            <div class="header-actions" style="display: flex; align-items: center; gap: 20px;">
+                <button id="theme-toggle" class="theme-btn" aria-label="Alternar Tema">🌙</button>
+                <div class="hamburger">
+                    <span></span><span></span><span></span>
+                </div>
             </div>
-            <div class="cont-item"><span class="icon" aria-hidden="true">📞</span>
-              <div class="cont-text">
-                <h4>Telefone</h4>
-                <p><a href="tel:+5531997459813">(31) 9 9745-9813</a></p>
-              </div>
+
+            <nav class="menu-wrapper">
+                <ul class="menu">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre Mim</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#resultados">Resultados</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#espaco">Espaço</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Carolina Queiroz | Estética Avançada em Belo Horizonte e Domicílio</h1>
+            <p>Resultados reais, sem dor e no conforto da sua casa ou no meu novo espaço fixo em Belo Horizonte.<br><strong>Da maternidade para sua beleza: cuidado profissional com segurança hospitalar, formação superior em estética e dedicação contínua (cursando Biomedicina).</strong></p>
+            <div class="hero-actions">
+                <a href="#agende-agora" class="btn-primary">Agendar Avaliação Grátis no WhatsApp</a>
+                <a href="#resultados" class="btn-outline">Ver meus resultados</a>
             </div>
-            <div class="cont-item"><span class="icon" aria-hidden="true">📍</span>
-              <div class="cont-text">
-                <h4>Localização</h4>
-                <p>Belo Horizonte - MG</p>
-              </div>
+        </div>
+    </section>
+
+    <!-- SOBRE MIM -->
+    <section id="sobre" class="sobre">
+        <div class="container sobre-grid">
+            <div class="sobre-img">
+                <img src="img/carolinaqueiroz-sobre.webp" alt="Carolina Queiroz Esteticista" loading="lazy">
             </div>
-          </div>
-          <div class="social-icons">
-            <p class="follow-instagram">
-              Siga-me nas Redes Sociais:
+            <div class="sobre-text">
+                <h2>Muito prazer, sou Carolina</h2>
+                <p>Sou uma profissional dedicada ao cuidado humano desde a raiz. Comecei minha trajetória como <strong>Técnica de Enfermagem</strong> no bloco obstétrico e maternidade. Essa experiência me ensinou biossegurança rigorosa, empatia profunda e o valor do toque gentil em momentos de vulnerabilidade.</p>
+                <p>Motivada por esse cuidado, avancei para a estética: concluí o <strong>Técnico em Estética</strong> e o curso superior de <strong>Tecnologia em Estética e Cosmética</strong> (graduação tecnológica), aprofundando minha base em anatomia, cosmetologia e protocolos de ponta.</p>
+                <p>Atualmente, curso <strong>Biomedicina</strong>, o que me prepara para procedimentos ainda mais avançados e científicos, sempre com foco em segurança.</p>
+                
+                <div class="frase-destaque">
+                    "Em 2026, junto com colegas do Centro Materno Infantil, recebi a <strong>Moção de Aplausos da Câmara Municipal de Contagem</strong> pelo atendimento humanizado de excelência. Um reconhecimento do meu rigor e carinho profissional."
+                </div>
+
+                <div class="certificacoes" style="flex-direction: column; align-items: flex-start; gap: 10px;">
+                    <button class="cert-badge" data-target="modal-cert-1">🩺 Técnica de Enfermagem – Bloco Obstétrico</button>
+                    <button class="cert-badge" data-target="modal-cert-2">💆‍♀️ Técnico em Estética</button>
+                    <button class="cert-badge" data-target="modal-cert-3">🎓 Tecnólogo em Estética e Cosmética</button>
+                    <button class="cert-badge" data-target="modal-cert-4">🔬 Cursando Biomedicina</button>
+                    <button class="cert-badge" data-target="modal-cert-5">🏆 Moção de Aplausos – Câmara Municipal (2026)</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DIFERENCIAIS -->
+    <section id="diferenciais" class="diferenciais">
+        <div class="container">
+            <div class="section-header">
+                <h2>Por que escolher Carolina?</h2>
+                <p>Mais do que estética, um cuidado completo e seguro para o seu bem-estar.</p>
+            </div>
+            <div class="diferenciais-grid">
+                <div class="dif-card">
+                    <div class="icon">🏥</div>
+                    <h3>Base em Saúde Hospitalar</h3>
+                    <p>Experiência real em maternidade: entendo o corpo feminino, pós-parto e cuidados sensíveis com extrema profundidade.</p>
+                </div>
+                <div class="dif-card">
+                    <div class="icon">🎓</div>
+                    <h3>Formação Completa em Estética</h3>
+                    <p>Técnico + Superior (Tecnólogo) em Estética e Cosmética, garantindo protocolos seguros, eficazes e baseados em estudo científico real.</p>
+                </div>
+                <div class="dif-card">
+                    <div class="icon">🔬</div>
+                    <h3>Evolução Científica</h3>
+                    <p>Cursando Biomedicina, marchando rumo à estética avançada com total embasamento biomédico para os melhores resultados.</p>
+                </div>
+                <div class="dif-card">
+                    <div class="icon">📜</div>
+                    <h3>Reconhecimento Oficial</h3>
+                    <p>Homenageada com Moção de Aplausos pela Câmara Municipal de Contagem pela excelência absoluta e empatia no cuidado humanizado.</p>
+                </div>
+                <div class="dif-card">
+                    <div class="icon">💖</div>
+                    <h3>Biossegurança e Empatia</h3>
+                    <p>Toque acolhedor aprendido em ambiente hospitalar severo, mas aplicado com doçura e carinho impecável na sua pele e bem-estar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section id="servicos" class="servicos">
+        <div class="container">
+            <div class="section-header">
+                <h2>Tratamentos que Transformam</h2>
+                <p>Tecnologia e técnicas manuais para realçar o que você tem de melhor.</p>
+            </div>
+
+            <div class="servicos-grid">
+                <!-- Servico 1 -->
+                <div class="card-servico">
+                    <div class="card-img"><img src="img/limpeza-de-pele-regenerativa.webp" alt="Limpeza de Pele Regenerativa" loading="lazy"></div>
+                    <div class="card-body">
+                        <h3>Limpeza de Pele Regenerativa ✨</h3>
+                        <p>Tratamento que une limpeza profunda à regeneração da pele. O PDRN auxilia na reparação celular, melhora a textura, hidratação e viço, deixando a pele mais saudável, iluminada e revitalizada.</p>
+                        <div class="preco">R$ 120,00</div>
+                        <a href="#agende-agora" class="btn-link">Agendar Avaliação →</a>
+                    </div>
+                </div>
+                <!-- Servico 2 -->
+                <div class="card-servico">
+                    <div class="card-img"><img src="img/limpeza-pele.webp" alt="Limpeza de Pele" loading="lazy"></div>
+                    <div class="card-body">
+                        <h3>Limpeza de Pele ✨</h3>
+                        <p>Procedimento essencial para remover impurezas, cravos e células mortas. Ajuda a controlar a oleosidade, desobstruir os poros e manter a pele limpa, saudável e com mais viço.</p>
+                        <div class="preco">R$ 100,00</div>
+                        <a href="#agende-agora" class="btn-link">Agendar Avaliação →</a>
+                    </div>
+                </div>
+                <!-- Servico 3 -->
+                <div class="card-servico">
+                    <div class="card-img"><img src="img/liberacao-miofascial.webp" alt="Liberação Miofascial" loading="lazy"></div>
+                    <div class="card-body">
+                        <h3>Liberação Miofascial 💆‍♀️</h3>
+                        <p>Técnica terapêutica que alivia dores musculares, reduz tensões e melhora a mobilidade. Atua nos pontos de rigidez, promovendo relaxamento profundo e melhor desempenho corporal. 30 minutos.</p>
+                        <div class="preco">R$ 100,00</div>
+                        <a href="#agende-agora" class="btn-link">Agendar Avaliação →</a>
+                    </div>
+                </div>
+                <!-- Servico 4 -->
+                <div class="card-servico">
+                    <div class="card-img"><img src="img/detox-corporal-com-manta-termica.webp" alt="Detox corporal com manta térmica" loading="lazy"></div>
+                    <div class="card-body">
+                        <h3>Detox corporal c/ manta térmica ✨</h3>
+                        <p>Auxilia no detox por aquecimento controlado ativando a circulação. Promove relaxamento, leveza, e contribui para a redução de inchaço e medidas. Ideal para conforto celular. 1h a 1h30m.</p>
+                        <div class="preco">R$ 100,00</div>
+                        <a href="#agende-agora" class="btn-link">Agendar Avaliação →</a>
+                    </div>
+                </div>
+                <!-- Servico 5 -->
+                <div class="card-servico">
+                    <div class="card-img"><img src="img/massagem-relaxante-ou-terapeutica.webp" alt="Massagem Relaxante" loading="lazy"></div>
+                    <div class="card-body">
+                        <h3>Massagem Relaxante / Terapêutica 🌿</h3>
+                        <p>Técnica suave que alivia tensões, reduz o estresse e promove bem-estar físico e mental. Ideal para relaxar o corpo, melhorar a circulação e proporcionar leveza. 30 a 50 min.</p>
+                        <div class="preco">R$ 100,00</div>
+                        <a href="#agende-agora" class="btn-link">Agendar Avaliação →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pacotes Switch -->
+            <div class="section-header" style="margin-top: 80px; margin-bottom: 30px;">
+                <h3 style="font-size: 2.2rem; color: var(--cor-primary);">Combos de Experiência</h3>
+                <p style="color: var(--cor-text-light); font-size: 1.1rem;">Spa e cuidados premium para resultados imediatos e alto relaxamento.</p>
+            </div>
+            <div class="pacotes">
+                <div class="card-pacote">
+                    <h3 style="font-size: 1.5rem;">Combo Renovação Completa</h3>
+                    <p style="font-size: 0.95rem;"><strong>Facial + Corporal:</strong> Limpeza de Pele Regenerativa + Massagem Relaxante.</p>
+                    <div style="margin: 20px 0;">
+                        <span style="text-decoration: line-through; color: #999; font-size: 0.9rem;">De R$ 220,00</span><br>
+                        <strong style="font-size: 1.3rem; color: var(--cor-text-dark);">Por R$ 190,00</strong>
+                    </div>
+                    <a href="#agende-agora" class="btn-outline" style="color:var(--cor-primary)!important; border-color:var(--cor-primary); padding: 10px 20px;">Agendar Combo</a>
+                </div>
+                <div class="card-pacote">
+                    <h3 style="font-size: 1.5rem;">Combo Detox & Leveza</h3>
+                    <p style="font-size: 0.95rem;"><strong>Foco em Desinchaço:</strong> Detox corporal com manta térmica + Massagem Relaxante/Terapêutica.</p>
+                    <div style="margin: 20px 0;">
+                        <span style="text-decoration: line-through; color: #999; font-size: 0.9rem;">De R$ 200,00</span><br>
+                        <strong style="font-size: 1.3rem; color: var(--cor-text-dark);">Por R$ 175,00</strong>
+                    </div>
+                    <a href="#agende-agora" class="btn-outline" style="color:var(--cor-primary)!important; border-color:var(--cor-primary); padding: 10px 20px;">Agendar Combo</a>
+                </div>
+                <div class="card-pacote">
+                    <h3 style="font-size: 1.5rem;">Combo Alívio Muscular</h3>
+                    <p style="font-size: 0.95rem;"><strong>Foco em Dor e Tensão:</strong> Liberação Miofascial (30 min) + Massagem Terapêutica (30 min).</p>
+                    <div style="margin: 20px 0;">
+                        <span style="text-decoration: line-through; color: #999; font-size: 0.9rem;">De R$ 200,00</span><br>
+                        <strong style="font-size: 1.3rem; color: var(--cor-text-dark);">Por R$ 170,00</strong>
+                    </div>
+                    <a href="#agende-agora" class="btn-outline" style="color:var(--cor-primary)!important; border-color:var(--cor-primary); padding: 10px 20px;">Agendar Combo</a>
+                </div>
+            </div>
+
+            <div class="section-header" style="margin-top: 60px; margin-bottom: 30px;">
+                <h3 style="font-size: 2.2rem; color: var(--cor-primary);">Programas de Recorrência</h3>
+                <p style="color: var(--cor-text-light); font-size: 1.1rem;">Acompanhamento contínuo para quem prioriza o bem-estar duradouro e economia guiada.</p>
+            </div>
+            <div class="pacotes">
+                <div class="card-pacote" style="border-color: var(--cor-accent);">
+                    <h3 style="font-size: 1.5rem;">Programa Bem-Estar Semanal</h3>
+                    <p style="font-size: 0.95rem;"><strong>Mensalidade:</strong> 4 sessões no mês a escolher entre Massagem Relaxante ou Liberação Miofascial.</p>
+                    <div style="margin: 20px 0;">
+                        <span style="text-decoration: line-through; color: #999; font-size: 0.9rem;">De R$ 400,00</span><br>
+                        <strong style="font-size: 1.3rem; color: var(--cor-text-dark);">Por R$ 340,00 <span style="font-size:0.85rem; font-weight:normal;">(R$ 85/sessão)</span></strong>
+                    </div>
+                    <a href="#agende-agora" class="btn-primary" style="padding: 10px 20px;">Assinar Plano</a>
+                </div>
+                <div class="card-pacote" style="border-color: var(--cor-accent);">
+                    <h3 style="font-size: 1.5rem;">Programa Pele Perfeita</h3>
+                    <p style="font-size: 0.95rem;"><strong>Bimestral/Trimestral:</strong> 1 Limpeza Reg. (Mês 1) + 1 Limpeza Padrão (Mês 2) + 2 Massag. Relaxantes.</p>
+                    <div style="margin: 20px 0;">
+                        <span style="text-decoration: line-through; color: #999; font-size: 0.9rem;">De R$ 420,00</span><br>
+                        <strong style="font-size: 1.3rem; color: var(--cor-text-dark);">Por R$ 360,00</strong>
+                    </div>
+                    <a href="#agende-agora" class="btn-primary" style="padding: 10px 20px;">Assinar Plano</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESULTADOS (MASONRY) -->
+    <section id="resultados" class="resultados">
+        <div class="container">
+            <div class="section-header">
+                <h2>Resultados Reais – Veja a Transformação</h2>
+                <p>A beleza da estética avançada com resultados visíveis desde a primeira sessão.</p>
+            </div>
+
+            <!-- Filtros Simbólicos UI -->
+            <div class="filtros">
+                <button class="btn-filtro ativo" data-filter="todos">Todos</button>
+                <button class="btn-filtro" data-filter="facial">Facial</button>
+                <button class="btn-filtro" data-filter="corporal">Corporal</button>
+                <button class="btn-filtro" data-filter="laser">Laser</button>
+            </div>
+
+            <!-- Masonry Grid de Imagens Reais e Estéticas -->
+            <div class="masonry">
+                <div class="item-resultado" data-category="facial">
+                    <img src="img/limpeza-de-pele.webp" alt="Limpeza de Pele" loading="lazy">
+                    <div class="legenda-resultado">Limpeza de Pele</div>
+                </div>
+                <div class="item-resultado" data-category="facial">
+                    <img src="img/limpeza-de-pele-e-micro-agulhamento.webp" alt="Microagulhamento" loading="lazy">
+                    <div class="legenda-resultado">Limpeza de Pele + Microagulhamento</div>
+                </div>
+                <div class="item-resultado" data-category="laser">
+                    <img src="img/clareamento-de-axila.webp" alt="Clareamento de Axila" loading="lazy">
+                    <div class="legenda-resultado">Clareamento de Axila</div>
+                </div>
+                <div class="item-resultado" data-category="facial">
+                    <img src="img/limpeza-de-pele-2.webp" alt="Limpeza de Pele Profunda" loading="lazy">
+                    <div class="legenda-resultado">Limpeza de Pele Profunda</div>
+                </div>
+                <div class="item-resultado" data-category="corporal">
+                    <img src="img/protocolo-detox-enzima.webp" alt="Protocolo Detox Enzima" loading="lazy">
+                    <div class="legenda-resultado">Protocolo Detox - Enzima - Hidrolipoclasia</div>
+                </div>
+                <div class="item-resultado" data-category="corporal">
+                    <img src="img/ultrassom-cavitacional (ou lipocavitação).webp" alt="Ultrassom Cavitacional (ou Lipocavitação)" loading="lazy">
+                    <div class="legenda-resultado">Ultrassom Cavitacional (ou lipo sem cortes)</div>
+                </div>
+                <div class="item-resultado" data-category="facial">
+                    <img src="img/protocolo-limpeza-de-pele.webp" alt="Protocolo Limpeza de Pele" loading="lazy">
+                    <div class="legenda-resultado">Protocolo Completo de Limpeza de Pele</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section id="depoimentos" class="depoimentos">
+        <div class="container">
+            <div class="section-header">
+                <h2>O que minhas clientes dizem</h2>
+                <p>Nossa maior recompensa é ver a sua satisfação refletida no espelho.</p>
+            </div>
+
+            <div class="carrosel-wrap">
+                <div class="card-depoimento">
+                    <div class="stars">★★★★★</div>
+                    <p class="depo-texto">"Eu morria de medo de depilação a laser por causa da dor, mas com a Carol não senti ABSOLUTAMENTE NADA! Além disso, no atendimento a domicílio, o conforto é indescritível."</p>
+                    <div class="cliente-info">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Mariana S." loading="lazy">
+                        <div>
+                            <h4>Mariana S.</h4>
+                            <span>32 anos, Belo Horizonte</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-depoimento">
+                    <div class="stars">★★★★★</div>
+                    <p class="depo-texto">"Após o parto, minha pele mudou muito e eu estava cheia de medos e inseguranças. A Carol com sua experiência entendeu exatamente o que eu precisava. Cuidado totalmente transformador e acolhedor, minha autoestima mudou!"</p>
+                    <div class="cliente-info">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Juliana Costa" loading="lazy">
+                        <div>
+                            <h4>Juliana Costa</h4>
+                            <span>Mãe do Léo, Belo Horizonte</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-depoimento">
+                    <div class="stars">★★★★★</div>
+                    <p class="depo-texto">"Minha pele antes da limpeza da Carol era super reativa e cheia de manchas. Ela usou produtos levíssimos e minha pele ficou outra. Estou ansiosa pro espaço físico dela!"</p>
+                    <div class="cliente-info">
+                        <img src="https://randomuser.me/api/portraits/women/22.jpg" alt="Fernanda Lima" loading="lazy">
+                        <div>
+                            <h4>Fernanda Lima</h4>
+                            <span>41 anos, Belo Horizonte</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="duvidas" class="faq">
+        <div class="container faq-wrap">
+            <div class="section-header">
+                <h2>Dúvidas Comuns</h2>
+                <p>Cuidado e transparência desde o primeiro contato.</p>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Você tem formação na área da saúde?</button>
+                <div class="faq-answer">
+                    <p>Sim! Sou Técnica de Enfermagem (com experiência em maternidade), Técnico e Tecnólogo em Estética e Cosmética (Superior), e atualmente curso Biomedicina. Tudo isso garante protocolos totalmente seguros, personalizados e com embasamento científico de ponta.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Você tem experiência com pele pós-parto ou mães recentes?</button>
+                <div class="faq-answer">
+                    <p>Sim! Minha formação técnica em enfermagem no bloco obstétrico e alojamento conjunto me permite adaptar qualquer protocolo estético com absoluta segurança e empatia para essa fase sensível. É o foco do meu cuidado.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Os procedimentos têm risco de dor?</button>
+                <div class="faq-answer">
+                    <p>Meu foco central é garantir conforto total e zero sofrimento. Usamos tecnologias modernas como laser com ponta de gelo e técnicas que priorizam o alívio, unindo resultado estético a relaxamento.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Posso levar meu bebê nos atendimentos a domicílio?</button>
+                <div class="faq-answer">
+                    <p>Sem problemas! O atendimento acontece no seu refúgio, no conforto da sua casa. Sendo profissional vinda da maternidade, não há incômodo e adaptamos o tempo às pausas necessárias para sua rotina com o bebê.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MEU ESPAÇO -->
+    <section id="espaco" class="espaco">
+        <div class="container">
+            <div class="section-header">
+                <h2>Meu Espaço – Atendimento Presencial e Domicílio</h2>
+                <p>Onde o seu conforto encontra os melhores resultados.</p>
+            </div>
+
+            <div class="espaco-grid">
+                <div class="espaco-img"><img src="img/ambiente-de-atendimento.webp" alt="Ambiente de Atendimento Domiciliar" loading="lazy"></div>
+                <div class="espaco-img"><img src="img/ambiente-de-atendimento-2.webp" alt="Detalhes do Atendimento Domiciliar" loading="lazy"></div>
+            </div>
+
+            <p class="espaco-texto">
+                Atendo de forma <strong>exclusiva a domicílio</strong> em Belo Horizonte e Região Metropolitana para o seu total conforto. <br><br>
+                Em breve, estarei inaugurando meu <strong>novo consultório fixo</strong>: um ambiente premium, rigorosamente higienizado, acolhedor e preparado aos mínimos detalhes para receber você como uma rainha.
             </p>
-          </div>
-          <div class="social-icons">
-            <a href="https://www.instagram.com/carolina_mqueiroz/" target="_blank" class="social-icon"
-              aria-label="Instagram">
-              <svg class="icon instagram" aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor">
-                <path
-                  d="M12 2.163c3.204 0 3.584.012 4.849.07 1.366.062 2.633.334 3.608 1.31.974.976 1.247 2.243 1.309 3.608.058 1.265.069 1.645.069 4.849s-.012 3.584-.07 4.849c-.062 1.366-.335 2.633-1.31 3.608-.975.976-2.243 1.247-3.608 1.309-1.265.058-1.645.069-4.849.069s-3.584-.012-4.849-.07c-1.366-.062-2.633-.335-3.608-1.31-.976-.975-1.247-2.243-1.309-3.608C2.175 15.746 2.163 15.366 2.163 12s.012-3.584.07-4.849c.062-1.366.334-2.633 1.31-3.608.975-.976 2.243-1.247 3.608-1.309C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.015 7.052.072 5.775.129 4.678.447 3.743 1.383 2.807 2.318 2.489 3.415 2.432 4.692 2.375 5.972 2.36 6.381 2.36 12s.015 6.028.072 7.308c.057 1.277.375 2.374 1.311 3.31.936.936 2.033 1.254 3.310 1.311 1.28.057 1.689.072 7.308.072s6.028-.015 7.308-.072c1.277-.057 2.374-.375 3.31-1.311.936-.936 1.254-2.033 1.311-3.31.057-1.28.072-1.689.072-7.308s-.015-6.028-.072-7.308c-.057-1.277-.375-2.374-1.311-3.31-.936-.936-2.033-1.254-3.31-1.311C15.668.015 15.259 0 12 0z" />
-                <path
-                  d="M12 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.162a3.999 3.999 0 110-7.998 3.999 3.999 0 010 7.998zm6.406-11.845a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z" />
-              </svg>
-            </a>
-            <a href="https://wa.me/5531997459813" target="_blank" class="social-icon" aria-label="WhatsApp">
-              <svg class="icon whatsapp" aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor">
-                <path
-                  d="M20.52 3.48A11.9 11.9 0 0012 .02 11.94 11.94 0 003.47 3.48 11.97 11.97 0 00.02 12c0 2.18.57 4.32 1.65 6.21L0 24l6.04-1.56A11.93 11.93 0 0012 24c2.18 0 4.32-.57 6.21-1.65A11.97 11.97 0 0024 12a11.9 11.9 0 00-3.48-8.52zm-8.52 17.52c-1.85 0-3.66-.5-5.24-1.42l-.37-.22-3.58.93.96-3.49-.24-.37A8.956 8.956 0 013.02 12c0-4.96 4.02-9 9-9s9 4.04 9 9-4.02 9-9 9zm5.3-6.93c-.29-.14-1.71-.84-1.98-.93-.27-.1-.47-.14-.67.14-.20.28-.77.93-.94 1.12-.17.20-.35.22-.65.08-1.76-.88-2.92-1.56-4.10-3.53-.31-.53.31-.49.90-1.63.10-.18.05-.34-.02-.47-.07-.14-.67-1.62-.92-2.22-.24-.58-.49-.50-.67-.51-.17 0-.37 0-.57 0-.20 0-.52.07-.80.37-.27.30-1.04 1.02-1.04 2.48s1.06 2.87 1.21 3.07c.15.20 2.10 3.20 5.09 4.49.71.31 1.26.50 1.69.64.71.22 1.35.19 1.86.12.57-.08 1.71-.70 1.95-1.38.24-.68.24-1.26.17-1.38-.07-.12-.27-.20-.57-.34z" />
-              </svg>
-            </a>
-          </div>
         </div>
-
-        <div class="form" aria-label="Formulário de agendamento">
-          <h2>Agendamento</h2>
-          <form id="form-agendamento">
-            <label for="nome">Nome</label>
-            <input type="text" id="nome" name="nome" required aria-required="true">
-            <label for="procedimento">Procedimento</label>
-            <select id="procedimento" name="procedimento" required>
-              <option value="">Selecione</option>
-              <option value="Limpeza de Pele">Limpeza de Pele</option>
-              <option value="Massagem Relaxante">Massagem Relaxante</option>
-              <option value="Massagem Terapêutica">Massagem Terapêutica</option>
-              <option value="Depilação a Laser">Depilação a Laser</option>
-              <option value="Depilação a Cera">Depilação a Cera</option>
-              <option value="Injetável">Injetável</option>
-            </select>
-            <label for="mensagem">Mensagem</label>
-            <textarea id="mensagem" rows="4" placeholder="Escreva uma mensagem..."></textarea>
-            <div class="form-buttons">
-              <button type="submit" class="whatsapp-button">
-                <svg class="icon whatsapp" aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor">
-                  <path
-                    d="M20.52 3.48A11.9 11.9 0 0012 .02 11.94 11.94 0 003.47 3.48 11.97 11.97 0 00.02 12c0 2.18.57 4.32 1.65 6.21L0 24l6.04-1.56A11.93 11.93 0 0012 24c2.18 0 4.32-.57 6.21-1.65A11.97 11.97 0 0024 12a11.9 11.9 0 00-3.48-8.52zm-8.52 17.52c-1.85 0-3.66-.5-5.24-1.42l-.37-.22-3.58.93.96-3.49-.24-.37A8.956 8.956 0 013.02 12c0-4.96 4.02-9 9-9s9 4.04 9 9-4.02 9-9 9zm5.3-6.93c-.29-.14-1.71-.84-1.98-.93-.27-.1-.47-.14-.67.14-.20.28-.77.93-.94 1.12-.17.20-.35.22-.65.08-1.76-.88-2.92-1.56-4.10-3.53-.31-.53.31-.49.90-1.63.10-.18.05-.34-.02-.47-.07-.14-.67-1.62-.92-2.22-.24-.58-.49-.50-.67-.51-.17 0-.37 0-.57 0-.20 0-.52.07-.80.37-.27.30-1.04 1.02-1.04 2.48s1.06 2.87 1.21 3.07c.15.20 2.10 3.20 5.09 4.49.71.31 1.26.50 1.69.64.71.22 1.35.19 1.86.12.57-.08 1.71-.70 1.95-1.38.24-.68.24-1.26.17-1.38-.07-.12-.27-.20-.57-.34z" />
-                </svg>
-                Agendar via WhatsApp
-              </button>
-              <button type="reset" class="clear-button">Limpar</button>
-            </div>
-            <p id="form-feedback" style="display:none; color:green; margin-top:10px;">Mensagem pronta para envio no
-              WhatsApp!</p>
-          </form>
-        </div>
-      </div>
     </section>
 
-    <div id="modal-historia" class="modal-overlay">
-      <div class="modal-content">
-        <button class="modal-close" aria-label="Fechar modal">×</button>
-        <h2>Minha História</h2>
-        <p>Antes de me dedicar à estética, atuei na enfermagem — e ali percebi como o cuidado e o toque humano podem
-          transformar vidas...</p>
-        <p>Hoje, levo essa essência para cada tratamento. Meu trabalho é unir beleza e bem-estar com segurança, carinho
-          e resultados reais.</p>
-      </div>
-    </div>
-  </main>
+    <!-- PROTOCOLO DE SEGURANÇA -->
+    <section id="protocolo" class="faq" style="background-color: var(--cor-surface); padding-top: 50px;">
+        <div class="container faq-wrap">
+            <div class="section-header" style="margin-bottom: 30px;">
+                <h2 style="font-size: 1.6rem; color: var(--cor-accent);">Segurança que você pode ver e sentir</h2>
+                <h3 style="font-size: 2.2rem; margin-bottom: 15px; color: var(--cor-primary);">Protocolo Domiciliar Hospitalar</h3>
+                <p>Minha experiência como técnica de enfermagem em maternidade me ensinou que segurança nunca é detalhe. Por isso, trago para o seu lar o mesmo padrão de biossegurança usado em ambiente médico.</p>
+            </div>
 
-  <!-- Botões flutuantes -->
-  <div class="social-float">
-    <a href="https://wa.me/5531997459813" target="_blank" rel="noopener noreferrer" class="float-btn float-whatsapp"
-      aria-label="Falar no WhatsApp">
-      <svg viewBox="0 0 24 24" fill="currentColor">
-        <path
-          d="M20.52 3.48A11.9 11.9 0 0012 .02 11.94 11.94 0 003.47 3.48 11.97 11.97 0 00.02 12c0 2.18.57 4.32 1.65 6.21L0 24l6.04-1.56A11.93 11.93 0 0012 24c2.18 0 4.32-.57 6.21-1.65A11.97 11.97 0 0024 12a11.9 11.9 0 00-3.48-8.52zm-8.52 17.52c-1.85 0-3.66-.5-5.24-1.42l-.37-.22-3.58.93.96-3.49-.24-.37A8.956 8.956 0 013.02 12c0-4.96 4.02-9 9-9s9 4.04 9 9-4.02 9-9 9zm5.3-6.93c-.29-.14-1.71-.84-1.98-.93-.27-.1-.47-.14-.67.14-.20.28-.77.93-.94 1.12-.17.20-.35.22-.65.08-1.76-.88-2.92-1.56-4.10-3.53-.31-.53.31-.49.90-1.63.10-.18.05-.34-.02-.47-.07-.14-.67-1.62-.92-2.22-.24-.58-.49-.50-.67-.51-.17 0-.37 0-.57 0-.20 0-.52.07-.80.37-.27.30-1.04 1.02-1.04 2.48s1.06 2.87 1.21 3.07c.15.20 2.10 3.20 5.09 4.49.71.31 1.26.50 1.69.64.71.22 1.35.19 1.86.12.57-.08 1.71-.70 1.95-1.38.24-.68.24-1.26.17-1.38-.07-.12-.27-.20-.57-.34z" />
-      </svg>
-    </a>
-    <a href="https://www.instagram.com/carolina_mqueiroz/" target="_blank" rel="noopener noreferrer"
-      class="float-btn float-insta" aria-label="Instagram @carolina_mqueiroz">
-      <svg viewBox="0 0 24 24" fill="currentColor">
-        <path
-          d="M12 2.163c3.204 0 3.584.012 4.849.07 1.366.062 2.633.334 3.608 1.31.974.976 1.247 2.243 1.309 3.608.058 1.265.069 1.645.069 4.849s-.012 3.584-.07 4.849c-.062 1.366-.335 2.633-1.31 3.608-.975.976-2.243 1.247-3.608 1.309-1.265.058-1.645.069-4.849.069s-3.584-.012-4.849-.07c-1.366-.062-2.633-.335-3.608-1.31-.976-.975-1.247-2.243-1.309-3.608C2.175 15.746 2.163 15.366 2.163 12s.012-3.584.07-4.849c.062-1.366.334-2.633 1.310-3.608.975-.976 2.243-1.247 3.608-1.309C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.015 7.052.072 5.775.129 4.678.447 3.743 1.383 2.807 2.318 2.489 3.415 2.432 4.692 2.375 5.972 2.36 6.381 2.36 12s.015 6.028.072 7.308c.057 1.277.375 2.374 1.311 3.31.936.936 2.033 1.254 3.310 1.311 1.28.057 1.689.072 7.308.072s6.028-.015 7.308-.072c1.277-.057 2.374-.375 3.31-1.311.936-.936 1.254-2.033 1.311-3.31.057-1.28.072-1.689.072-7.308s-.015-6.028-.072-7.308c-.057-1.277-.375-2.374-1.311-3.31-.936-.936-2.033-1.254-3.31-1.311C15.668.015 15.259 0 12 0z" />
-        <path
-          d="M12 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.162a3.999 3.999 0 110-7.998 3.999 3.999 0 010 7.998zm6.406-11.845a1.44 1.44 0 11-2.880 0 1.44 1.44 0 012.880 0z" />
-      </svg>
-    </a>
-  </div>
+            <div class="faq-item">
+                <button class="faq-question">1. Materiais e Equipamentos (Mala Exclusiva)</button>
+                <div class="faq-answer">
+                    <p>
+                        <strong>Mala rígida e impermeável</strong> com divisórias internas e cadeado de segurança.<br><br>
+                        <strong>Maca portátil</strong> com capa impermeável e lençóis descartáveis ou de algodão rigorosamente higienizados a 60°C.<br><br>
+                        <strong>EPIs completos:</strong> Luvas de nitrila esterilizadas (caixa nova por atendimento), touca, máscara cirúrgica/N95 e avental.<br><br>
+                        <strong>Materiais Estéreis:</strong> Agulhas, seringas, gaze e ativos em embalagens individuais lacradas.<br><br>
+                        <strong>Caixa rígida padrão ANVISA</strong> para descarte de perfuro-cortantes (fixada e lacrada após uso).
+                    </p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-question">2. Antes de Chegar à Residência</button>
+                <div class="faq-answer">
+                    <p>
+                        Confirmo ativamente por WhatsApp o endereço e horários exatos.<br><br>
+                        Chego sempre com uniforme rigorosamente limpo e identificada.<br><br>
+                        Higienizo as mãos com técnica hospitalar aos 5 momentos, antes mesmo de entrar e tocar em algo.<br><br>
+                        Peço permissão para usar o espaço previamente escolhido (quarto, sala).
+                    </p>
+                </div>
+            </div>
 
-  <footer class="site-footer">
-    <div class="footer-container">
-      <div class="footer-col">
-        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAUEBA==" data-src="img/logo.webp"
-          alt="Logotipo da Esteticista Carolina Queiroz em Belo Horizonte." width="120" height="120" class="footer-logo"
-          decoding="async">
-        <p class="footer-slogan">Realçando sua beleza, com carinho e dedicação.</p>
-      </div>
-      <div class="footer-col">
-        <h4>Links</h4>
-        <ul>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#agendamento">Agendamento</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Contato</h4>
-        <p>📞 <a href="tel:+5531997459813">(31) 99745-9813</a></p>
-        <p>📍 Belo Horizonte - MG</p>
-        <p>📧 <a href="mailto:carolinamiguelqueiroz@gmail.com">carolinamiguelqueiroz@gmail.com</a></p>
-      </div>
-      <div class="footer-col">
-        <h4>Redes Sociais</h4>
-        <div class="social-icons">
-          <a href="https://www.instagram.com/carolina_mqueiroz/" target="_blank" class="social-icon"
-            aria-label="Instagram">
-            <svg class="icon instagram" aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor">
-              <path
-                d="M12 2.163c3.204 0 3.584.012 4.849.07 1.366.062 2.633.334 3.608 1.31.974.976 1.247 2.243 1.309 3.608.058 1.265.069 1.645.069 4.849s-.012 3.584-.07 4.849c-.062 1.366-.335 2.633-1.31 3.608-.975.976-2.243 1.247-3.608 1.309-1.265.058-1.645.069-4.849.069s-3.584-.012-4.849-.07c-1.366-.062-2.633-.335-3.608-1.31-.976-.975-1.247-2.243-1.309-3.608C2.175 15.746 2.163 15.366 2.163 12s.012-3.584.07-4.849c.062-1.366.334-2.633 1.31-3.608.975-.976 2.243-1.247 3.608-1.309C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.015 7.052.072 5.775.129 4.678.447 3.743 1.383 2.807 2.318 2.489 3.415 2.432 4.692 2.375 5.972 2.36 6.381 2.36 12s.015 6.028.072 7.308c.057 1.277.375 2.374 1.311 3.31.936.936 2.033 1.254 3.310 1.311 1.28.057 1.689.072 7.308.072s6.028-.015 7.308-.072c1.277-.057 2.374-.375 3.31-1.311.936-.936 1.254-2.033 1.311-3.31.057-1.28.072-1.689.072-7.308s-.015-6.028-.072-7.308c-.057-1.277-.375-2.374-1.311-3.31-.936-.936-2.033-1.254-3.31-1.311C15.668.015 15.259 0 12 0z" />
-              <path
-                d="M12 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.162a3.999 3.999 0 110-7.998 3.999 3.999 0 010 7.998zm6.406-11.845a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z" />
-            </svg>
-          </a>
-          <a href="https://wa.me/5531997459813" target="_blank" class="social-icon" aria-label="WhatsApp">
-            <svg class="icon whatsapp" aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor">
-              <path
-                d="M20.52 3.48A11.9 11.9 0 0012 .02 11.94 11.94 0 003.47 3.48 11.97 11.97 0 00.02 12c0 2.18.57 4.32 1.65 6.21L0 24l6.04-1.56A11.93 11.93 0 0012 24c2.18 0 4.32-.57 6.21-1.65A11.97 11.97 0 0024 12a11.9 11.9 0 00-3.48-8.52zm-8.52 17.52c-1.85 0-3.66-.5-5.24-1.42l-.37-.22-3.58.93.96-3.49-.24-.37A8.956 8.956 0 013.02 12c0-4.96 4.02-9 9-9s9 4.04 9 9-4.02 9-9 9zm5.3-6.93c-.29-.14-1.71-.84-1.98-.93-.27-.1-.47-.14-.67.14-.20.28-.77.93-.94 1.12-.17.20-.35.22-.65.08-1.76-.88-2.92-1.56-4.10-3.53-.31-.53.31-.49.90-1.63.10-.18.05-.34-.02-.47-.07-.14-.67-1.62-.92-2.22-.24-.58-.49-.50-.67-.51-.17 0-.37 0-.57 0-.20 0-.52.07-.80.37-.27.30-1.04 1.02-1.04 2.48s1.06 2.87 1.21 3.07c.15.20 2.10 3.20 5.09 4.49.71.31 1.26.50 1.69.64.71.22 1.35.19 1.86.12.57-.08 1.71-.70 1.95-1.38.24-.68.24-1.26.17-1.38-.07-.12-.27-.20-.57-.34z" />
-            </svg>
-          </a>
+            <div class="faq-item">
+                <button class="faq-question">3. Montagem do Ambiente (5–7 minutos)</button>
+                <div class="faq-answer">
+                    <p>
+                        Coloco lençol descartável ou protetor impermeável protetor antes de iniciar qualquer abertura de materiais.<br><br>
+                        Abro os descartáveis estéreis <strong>somente no exato momento do uso</strong> e na sua frente.<br><br>
+                        Higienizo todas as superfícies necessárias com álcool 70% de padrão médico.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">4. Durante o Atendimento</button>
+                <div class="faq-answer">
+                    <p>
+                        Uso luvas absolutamente novas para cada etapa de procedimento e as troco sempre que mudar de área.<br><br>
+                        Realizo antissepsia preparatória minuciosa da sua pele.<br><br>
+                        Mantenho todo o meu material protegido dentro da mala fechada ou sobre um campo estéril isolado.<br><br>
+                        Jamais deixo agulhas ou objetos cortantes expostos no ambiente.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">5. Desmontagem e Descarte</button>
+                <div class="faq-answer">
+                    <p>
+                        Recolho os perfuro-cortantes diretamente para dentro da caixa rígida da ANVISA e rosqueio a trava.<br><br>
+                        Separo perfeitamente o lixo infectante (saco vermelho de proteção) do lixo comum.<br><br>
+                        Higienizo toda e qualquer superfície tocada.<br><br>
+                        Deixo o ambiente da casa exatamente como encontrei, em pleno estado de ordem.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">6. Medidas Extras de Segurança</button>
+                <div class="faq-answer">
+                    <p>
+                        <strong>Crianças e animais:</strong> Solicito previamente para que fiquem em local separado durante os procedimentos como laser.<br><br>
+                        <strong>Privacidade absoluta:</strong> Nunca fotografo qualquer passo sem a sua autorização prévia por documento.<br><br>
+                        <strong>Kit de Emergência:</strong> Carrego um pack de primeiros socorros padrão para máxima blindagem de urgências.
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
+    </section>
+
+    <!-- CONTATO / AGENDE AGORA -->
+    <section id="agende-agora" class="contato">
+        <div class="container contato-wrap">
+            <div class="contato-info">
+                <h2>Está na hora de cuidar de você. Agende sua avaliação gratuita!</h2>
+                <p style="font-size: 1.1rem; color: var(--cor-text-light);">Fale comigo pelo WhatsApp ou deixe seus dados, e eu te ajudo a descobrir o melhor tratamento para realçar sua beleza natural.</p>
+                
+                <ul class="lista-contato">
+                    <li>📞 <a href="https://wa.me/5531997459813" target="_blank">+55 (31) 99745-9813</a></li>
+                    <li>📧 <a href="mailto:carolinaqueiroz.estetica@gmail.com">carolinaqueiroz.estetica@gmail.com</a></li>
+                    <li>📸 <a href="https://www.instagram.com/carolina_mqueiroz/" target="_blank">@carolina_mqueiroz</a></li>
+                </ul>
+            </div>
+
+            <div class="form-box">
+                <form id="formAgendamento">
+                    <div class="input-group">
+                        <label for="nome">Como devemos te chamar?</label>
+                        <input type="text" id="nome" class="form-control" placeholder="Seu nome completo" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="telefone">WhatsApp</label>
+                        <input type="tel" id="telefone" class="form-control" placeholder="(31) 90000-0000" required>
+                    </div>
+                    <div class="input-group" style="position: relative;">
+                        <label>Serviço Desejado</label>
+                        <div class="custom-select-wrapper" id="customDrop">
+                            <div class="custom-select">
+                                <span class="custom-select-trigger">Selecione uma opção...</span>
+                            </div>
+                            <div class="custom-options">
+                                <span class="custom-option" data-value="Limpeza de Pele Regenerativa">Limpeza de Pele Regenerativa ✨</span>
+                                <span class="custom-option" data-value="Limpeza de Pele">Limpeza de Pele ✨</span>
+                                <span class="custom-option" data-value="Liberação Miofascial">Liberação Miofascial 💆‍♀️</span>
+                                <span class="custom-option" data-value="Detox corporal manta térmica">Detox Corporal com Manta ✨</span>
+                                <span class="custom-option" data-value="Massagem Relaxante ou terapêutica">Massagem Relaxante/Terapêutica 🌿</span>
+                                <span class="custom-option" data-value="Outro / Avaliação Gratuita">Outro / Avaliação Gratuita</span>
+                            </div>
+                            <input type="hidden" id="servico" value="" required>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label for="msg">Deixe uma mensagem (opcional)</label>
+                        <textarea id="msg" class="form-control" rows="3" placeholder="Pode me contar um pouco sobre o que você busca..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary btn-submit">Enviar e Agendar pelo WhatsApp</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col" style="flex: 2; text-align: center;">
+                    <h2 class="logo" style="margin-bottom: 10px;">Carolina Queiroz</h2>
+                    <img src="img/logo.webp" alt="Logo Carolina Queiroz" style="max-width: 140px; border-radius: 50%; margin: 0 auto 15px auto; display: block; object-fit: cover; aspect-ratio: 1/1;">
+                    <p style="margin-bottom: 20px;">Estética avançada e cuidado humanizado. Da maternidade para realçar a sua beleza natural.</p>
+                    <div style="display: flex; gap: 15px; justify-content: center;">
+                        <a href="https://www.instagram.com/carolina_mqueiroz/" target="_blank" style="color:var(--cor-text-dark); font-size: 1.1rem; border: 1px solid var(--cor-borda); padding: 5px 12px; border-radius: 20px; transition: var(--transicao);">Instagram</a>
+                        <a href="https://wa.me/5531997459813" target="_blank" style="color:var(--cor-text-dark); font-size: 1.1rem; border: 1px solid var(--cor-borda); padding: 5px 12px; border-radius: 20px; transition: var(--transicao);">WhatsApp</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Navegação Rápida</h3>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#sobre">Sobre Mim</a></li>
+                        <li><a href="#servicos">Tratamentos</a></li>
+                        <li><a href="#resultados">Resultados</a></li>
+                        <li><a href="#protocolo">Protocolo de Segurança</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contato Direto</h3>
+                    <ul>
+                        <li><a href="https://wa.me/5531997459813">WhatsApp: (31) 99745-9813</a></li>
+                        <li><a href="mailto:carolinaqueiroz.estetica@gmail.com">carolinaqueiroz.estetica@gmail.com</a></li>
+                        <li>Atendimento: Domicílio em Belo Horizonte/RMBH e Espaço Fixo em Breve</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Carolina Queiroz Estética Avançada. Todos os direitos reservados.</p>
+                <p><a id="btn-privacidade">Política de Privacidade (LGPD)</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOAT BUTTONS -->
+    <div class="floats">
+        <button id="btn-top" class="btn-top" aria-label="Voltar ao topo">↑</button>
+        <a href="https://www.instagram.com/carolina_mqueiroz/" target="_blank" class="btn-float ig" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="white"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+        <a href="https://wa.me/5531997459813" target="_blank" class="btn-float wpp" aria-label="WhatsApp">
+            <svg fill="currentColor" width="34" height="34" viewBox="0 0 24 24"><path d="M12.012 2c5.506 0 9.989 4.478 9.989 9.984 0 5.504-4.483 9.984-9.989 9.984-1.744 0-3.414-.44-4.885-1.272l-5.112 1.34 1.365-4.985A9.923 9.923 0 012.023 11.984C2.023 6.478 6.506 2 12.012 2zm0 1.664c-4.588 0-8.324 3.731-8.324 8.32 0 1.559.434 3.037 1.22 4.316l-.777 2.835 2.909-.762a8.236 8.236 0 004.972 1.611c4.588 0 8.324-3.73 8.324-8.32 0-4.589-3.736-8.32-8.324-8.32zm4.407 10.99c-.244-.122-1.44-.712-1.663-.793-.223-.082-.386-.122-.549.122-.163.244-.63.793-.773.955-.142.163-.284.183-.528.061-.244-.122-1.028-.379-1.958-1.205-.724-.643-1.212-1.439-1.355-1.683-.142-.244-.015-.376.107-.498.11-.11.244-.285.366-.427.122-.143.163-.244.244-.407.082-.163.041-.305-.02-.427-.061-.122-.549-1.323-.752-1.811-.198-.477-.4-.412-.549-.42-.142-.007-.305-.007-.468-.007-.163 0-.427.061-.65.305-.224.244-.854.834-.854 2.036 0 1.202.875 2.362.997 2.525.122.163 1.71 2.608 4.143 3.659.579.25 1.031.4 1.385.513.582.185 1.111.159 1.529.096.467-.07 1.44-.589 1.643-1.159.203-.57.203-1.058.142-1.16-.061-.101-.223-.162-.467-.284z "/></svg>
+        </a>
     </div>
-    <div class="footer-bottom">
-      <p>© 2025 Estética Carol. Todos os direitos reservados.</p>
-      <p>Desenvolvido por <strong>Michael Dutra</strong> 💻</p>
+
+    <!-- MODAL PRIVACIDADE -->
+    <div class="modal-overlay" id="modal-lgpd">
+        <div class="modal-box">
+            <button class="modal-close" id="close-lgpd">&times;</button>
+            <h2>Política de Privacidade (LGPD)</h2>
+            <p><strong>Última atualização: Março de 2026</strong></p>
+            <p>A "Carolina Queiroz Estética Avançada" respeita a sua privacidade em total conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018).</p>
+            <p><strong>1. Coleta e Uso de Dados:</strong> Coletamos apenas as informações enviadas voluntariamente pelo formulário (Nome, WhatsApp, serviço pedido). Esses dados são usados exclusivamente para agendar sua avaliação e viabilizar o atendimento.</p>
+            <p><strong>2. Compartilhamento:</strong> Sob nenhuma circunstância alugamos, vendemos ou compartilhamos seus dados com terceiros. Suas informações de saúde (anamnese) e registros fotográficos são sigilosos.</p>
+            <p><strong>3. Seus Direitos:</strong> Você pode solicitar acesso, alteração ou exclusão imediata de seus dados do nosso sistema entrando em contato direto através do nosso WhatsApp oficial.</p>
+        </div>
     </div>
-  </footer>
+
+    <!-- MODAIS DE CERTIFICADO -->
+    <div class="modal-overlay" id="modal-cert-1">
+        <div class="modal-box">
+            <button class="modal-close cert-close">&times;</button>
+            <h2 style="color:var(--cor-primary); margin-bottom: 5px;">Técnica de Enfermagem</h2>
+            <p style="font-size: 0.95rem; color: var(--cor-text-light); margin-bottom: 15px;"><strong>Bloco Obstétrico e Maternidade</strong></p>
+            <p>Atuação direta na linha de frente do cuidado humano. Experiência profunda e rigorosa em normas de biossegurança hospitalar, assepsia, e atendimento humanizado nos momentos de maior vulnerabilidade e sensibilidade das pacientes.</p>
+        </div>
+    </div>
+    <div class="modal-overlay" id="modal-cert-2">
+        <div class="modal-box">
+            <button class="modal-close cert-close">&times;</button>
+            <h2 style="color:var(--cor-primary); margin-bottom: 5px;">Técnico em Estética</h2>
+            <p style="font-size: 0.95rem; color: var(--cor-text-light); margin-bottom: 15px;"><strong>Formação Profissionalizante</strong></p>
+            <p>O primeiro passo na transição da saúde estrita para a saúde estética. Foco prático em limpeza de pele, massagens modeladoras e relaxantes, e protocolos básicos de embelezamento facial e corporal com precisão e toque gentil.</p>
+        </div>
+    </div>
+    <div class="modal-overlay" id="modal-cert-3">
+        <div class="modal-box">
+            <button class="modal-close cert-close">&times;</button>
+            <h2 style="color:var(--cor-primary); margin-bottom: 5px;">Tecnologia em Estética e Cosmética</h2>
+            <p style="font-size: 0.95rem; color: var(--cor-text-light); margin-bottom: 15px;"><strong>Graduação Superior</strong></p>
+            <p>Aprofundamento científico total. Estudo de anatomofisiologia celular, cosmetologia avançada, eletroterapias de ponta e elaboração de protocolos que integram saúde com regeneração estética, entregando resultados clínicos documentados.</p>
+        </div>
+    </div>
+    <div class="modal-overlay" id="modal-cert-4">
+        <div class="modal-box">
+            <button class="modal-close cert-close">&times;</button>
+            <h2 style="color:var(--cor-primary); margin-bottom: 5px;">Biomedicina</h2>
+            <p style="font-size: 0.95rem; color: var(--cor-text-light); margin-bottom: 15px;"><strong>Graduação Médica/Científica (Em andamento)</strong></p>
+            <p>A evolução máxima para procedimentos invasivos e de impacto. Estudo denso da fisiopatologia, análises clínicas e bioquímica, capacitando a execução e criação de tratamentos injetáveis hiper-seguros e baseados puramente na ciência.</p>
+        </div>
+    </div>
+    <div class="modal-overlay" id="modal-cert-5">
+        <div class="modal-box" style="max-width: 600px;">
+            <button class="modal-close cert-close">&times;</button>
+            <h2 style="color:var(--cor-primary); margin-bottom: 5px;">Moção de Aplausos (2026)</h2>
+            <p style="font-size: 0.95rem; color: var(--cor-text-light); margin-bottom: 15px;"><strong>Câmara Municipal de Contagem</strong></p>
+            <p style="margin-bottom: 20px;">Reconhecimento oficial e público recebido junto à equipe do Centro Materno Infantil pelo excepcional atendimento prestado à comunidade. Esse prêmio reflete uma vida de dedicação à dignidade humana que hoje se aplica na estética.</p>
+            <div style="display: flex; gap: 10px; flex-wrap: wrap; justify-content: center;">
+                <img src="img/homenagem.webp" alt="Homenagem 1" style="width: 30%; border-radius: 8px; object-fit: cover;" loading="lazy">
+                <img src="img/homenagem-2.webp" alt="Homenagem 2" style="width: 30%; border-radius: 8px; object-fit: cover;" loading="lazy">
+                <img src="img/homenagem-3.webp" alt="Homenagem 3" style="width: 30%; border-radius: 8px; object-fit: cover;" loading="lazy">
+            </div>
+        </div>
+    </div>
 </body>
 </html>
