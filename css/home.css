@@ -295,6 +295,16 @@ header.scrolled .logo {
   flex-wrap: wrap;
 }
 
+body:not([data-theme="dark"]) .hero-actions .btn-outline {
+  color: var(--cor-primary) !important;
+  border-color: var(--cor-primary);
+}
+
+body:not([data-theme="dark"]) .hero-actions .btn-outline:hover {
+  background-color: var(--cor-primary);
+  color: #fff !important;
+}
+
 /* HERO MOBILE ADJUSTMENTS */
 @media (max-width: 768px) {
   .hero-bg {
@@ -310,9 +320,10 @@ header.scrolled .logo {
   }
 
   .hero {
-    justify-content: center;
+    justify-content: flex-end;
+    align-items: center;
     text-align: center;
-    padding-bottom: 80px;
+    padding-bottom: 20px;
   }
 
   .hero-content {
