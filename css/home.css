@@ -305,25 +305,26 @@ body:not([data-theme="dark"]) .hero-actions .btn-outline:hover {
   color: #fff !important;
 }
 
-/* HERO MOBILE ADJUSTMENTS */
-@media (max-width: 768px) {
+/* TABLET & MOBILE HERO ADJUSTMENTS */
+@media (max-width: 992px) {
   .hero-bg {
     background-image: url('../img/hero-mobile.webp');
+    background-position: center top;
   }
 
   .hero-overlay {
-    background: linear-gradient(to top, rgba(252, 250, 248, 0.95) 0%, rgba(252, 250, 248, 0.5) 45%, transparent 100%);
+    background: linear-gradient(to top, rgba(252, 250, 248, 0.95) 0%, rgba(252, 250, 248, 0.4) 55%, transparent 100%);
   }
 
   [data-theme="dark"] .hero-overlay {
-    background: linear-gradient(to top, rgba(26, 24, 23, 0.95) 0%, rgba(26, 24, 23, 0.6) 45%, transparent 100%);
+    background: linear-gradient(to top, rgba(26, 24, 23, 0.95) 0%, rgba(26, 24, 23, 0.5) 55%, transparent 100%);
   }
 
   .hero {
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-end; /* Pushes content strictly to the bottom */
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
   }
 
   .hero-content {
